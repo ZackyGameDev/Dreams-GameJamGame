@@ -12,6 +12,10 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\int.gml</script>
+    <script>scripts\_sign.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_game</object>

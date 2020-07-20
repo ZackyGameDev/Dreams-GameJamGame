@@ -6,7 +6,7 @@
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>spr_player</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -28,13 +28,66 @@
             <string>grv = 0.15;
 vsp = 0.00;
 hsp = 0.00;
-walksp = 1.00;
+walksp = 2.00;
 jumpsp = 2.75;
 move_dir = 0;
 xprev = xstart;
 yprev = ystart;
+_friction = 0.125;
+dash_sp = 0;
+in_dash = false;
 // some of these variables are later updated
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>dash_sp</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>in_dash</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>false</string>
           </argument>
         </arguments>
       </action>
@@ -61,13 +114,15 @@ k_right = keyboard_check(ord("D"))||keyboard_check(vk_right)|| gamepad_button_ch
 k_down = keyboard_check(ord("S"))||keyboard_check(vk_down)|| gamepad_button_check(0, gp_padd);
 k_jump= keyboard_check_pressed(ord("W"))||keyboard_check_pressed(vk_space)|| gamepad_button_check_pressed(0, gp_face1);
 k_jump_rel=keyboard_check_released(ord("W"))||keyboard_check_released(vk_space)|| gamepad_button_check_released(0, gp_face1);
-k_dash = keyboard_check_pressed(vk_lshift) || (k_down &amp;&amp; k_jump)
+k_dash = (keyboard_check_pressed(vk_lshift) || (k_down &amp;&amp; k_jump)) &amp;&amp; self.in_dash == false
 floor_below = place_meeting(x, y+1, obj_floor);
 just_jumped = false;
 
 // Movement Calculation
-move_dir = k_right - k_left;
-hsp = walksp * move_dir;
+var move_dir = k_right - k_left;
+if move_dir != 0 and !self.in_dash {
+    hsp = walksp * move_dir;
+}
 
 if not k_dash and k_jump and floor_below {
 
@@ -77,26 +132,28 @@ if not k_dash and k_jump and floor_below {
     
 } else if k_dash {
     
-    dash_sp = walksp*1.75*move_dir
-
-} else {
-  
-    just_jumped = false;
+    self.in_dash = true;
+    dash_sp = walksp*2;
+    alarm[0] = 20;
+    hsp += dash_sp*sign(image_xscale);
 
 }
 
 vsp += grv;
+if hsp != 0 hsp -= _friction * sign(hsp)
+//if -_friction*2 &lt; hsp &lt; _friction*2 hsp = 0 // to cramp hsp to 0 in case friction from both the sides starts to give it siezures
 
 //  Checking for collision and then moving as per the calculated movement
-if place_meeting(x+walksp*move_dir, y, obj_floor){
+if place_meeting(x+hsp, y, obj_floor){
 
-    while not place_meeting(x+sign(hsp), y, obj_floor){
+    while !place_meeting(x+_sign(hsp), y, obj_floor){
     
-        x += sign(hsp);
+        x += _sign(hsp);
         
     }
     
     hsp = 0;
+    in_dash = false
     
 }
 
@@ -105,9 +162,9 @@ x += hsp;
 
 if place_meeting(x, y+vsp, obj_floor){
 
-    while not place_meeting(x, y+sign(vsp), obj_floor){
+    while not place_meeting(x, y+_sign(vsp), obj_floor){
     
-        y += sign(vsp);    
+        y += _sign(vsp);
         
     }
     
@@ -135,7 +192,7 @@ if floor_below {
 }
 */
 
-if sign(hsp) != 0 self.image_xscale = self.image_xscale * sign(hsp); // This is just for flipping the image into the direction player is facing
+if hsp != 0 self.image_xscale= _sign(hsp)
 </string>
           </argument>
         </arguments>
