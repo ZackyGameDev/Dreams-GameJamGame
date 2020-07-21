@@ -9,6 +9,9 @@ just_jumped = false;
 
 // Movement Calculation
 var move_dir = k_right - k_left;
+if !move_dir {
+    move_dir = round(gamepad_axis_value(0, gp_axislh))
+}
 if move_dir != 0 and !self.in_dash {
     hsp = walksp * move_dir;
 }
@@ -24,7 +27,7 @@ if not k_dash and k_jump and floor_below {
     self.in_dash = true;
     dash_sp = walksp*2;
     alarm[0] = 20;
-    if floor_below hsp += dash_sp*sign(image_xscale); else hsp = dash_sp*sign(image_xscale);
+    if floor_below hsp += dash_sp*sign(image_xscale); else hsp = (dash_sp*sign(image_xscale))*1.25;
 
 }
 
