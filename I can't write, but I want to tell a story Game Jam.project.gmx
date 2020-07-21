@@ -17,8 +17,8 @@
     <script>scripts\_sign.gml</script>
     <scripts name="Object Scripts">
       <scripts name="obj_player">
-        <script>scripts\obj_player_step.gml</script>
         <script>scripts\obj_player_create.gml</script>
+        <script>scripts\obj_player_step.gml</script>
       </scripts>
     </scripts>
   </scripts>
