@@ -11,4 +11,5 @@ dash_sp = 0;
 in_dash = false;
 accel = 0;
 momentum = 0;
+jumped_in_dash = false;
 // some of these variables are later updated

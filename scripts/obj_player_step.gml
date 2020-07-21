@@ -26,6 +26,7 @@ if not k_dash and k_jump and floor_below {
 
         self.momentum += dash_sp * sign(image_xscale) * 0.25 // Hyper Dash
         alarm[0] = 20;
+        jumped_in_dash = true;
 
     }
     
@@ -38,7 +39,7 @@ if not k_dash and k_jump and floor_below {
 
 }
 
-vsp += grv;
+if !(in_dash) vsp += grv;
 if (-0.15 < momentum && momentum < 0.15) momentum = 0; else momentum -= 0.15 * _sign(momentum); // momentum worked in kinda funny way so friction is hard coded here
 if (accel != 0) accel -= _friction * sign(accel);
 hsp = momentum + accel;
@@ -71,6 +72,7 @@ if place_meeting(x, y+vsp, obj_floor){
     }
     
     vsp = 0;
+    jumped_in_dash = false;
     
 }
 
