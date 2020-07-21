@@ -21,6 +21,13 @@ if not k_dash and k_jump and floor_below {
     vsp = 0;
     vsp = -jumpsp;
     just_jumped = true; // `just_jumped` is later used in squish squash section (currently removed)
+
+    if self.in_dash {
+
+        self.hsp += dash_sp * sign(image_xscale) * 0.5 // Hyper Dash
+        alarm[0] = 20;
+
+    }
     
 } else if k_dash {
     
