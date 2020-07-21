@@ -159,9 +159,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(0, 00, momentum)
-draw_text(0, 10, accel)
-draw_text(0, 20, hsp)
+            <string>draw_text_transformed(0, 00, momentum, 2, 2, 0)
+draw_text_transformed(0, 25, accel, 2, 2, 0)
+draw_text_transformed(0, 50, hsp, 2, 2, 0)
 </string>
           </argument>
         </arguments>

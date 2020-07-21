@@ -33,13 +33,13 @@ if not k_dash and k_jump and floor_below {
 } else if k_dash {
     
     self.in_dash = true;
-    dash_sp = walksp*2;
+    dash_sp = walksp*1.75;
     alarm[0] = 20;
     momentum = (dash_sp*sign(image_xscale))*1.25;
 
 }
 
-if !(in_dash) vsp += grv;
+if (not in_dash or jumped_in_dash) vsp += grv; else if !(jumped_in_dash) self.vsp = 0;
 if (-0.15 < momentum && momentum < 0.15) momentum = 0; else momentum -= 0.15 * _sign(momentum); // momentum worked in kinda funny way so friction is hard coded here
 if (accel != 0) accel -= _friction * sign(accel);
 hsp = momentum + accel;
