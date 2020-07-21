@@ -39,7 +39,7 @@ if not k_dash and k_jump and floor_below {
 }
 
 vsp += grv;
-if (-0.15 < momentum && momentum < 0.15) momentum = 0; else momentum -= 0.15; // momentum worked in kinda funny way so friction is hard coded here
+if (-0.15 < momentum && momentum < 0.15) momentum = 0; else momentum -= 0.15 * _sign(momentum); // momentum worked in kinda funny way so friction is hard coded here
 if (accel != 0) accel -= _friction * sign(accel);
 hsp = momentum + accel;
 
