@@ -9,4 +9,6 @@ yprev = ystart;
 _friction = 0.125;
 dash_sp = 0;
 in_dash = false;
+accel = 0;
+momentum = 0;
 // some of these variables are later updated

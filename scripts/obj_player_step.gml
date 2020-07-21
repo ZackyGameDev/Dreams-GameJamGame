@@ -12,8 +12,8 @@ var move_dir = k_right - k_left;
 if !move_dir {
     move_dir = round(gamepad_axis_value(0, gp_axislh))
 }
-if move_dir != 0 and !self.in_dash {
-    hsp = walksp * move_dir;
+if move_dir != 0 {
+    accel = clamp(accel + (walksp * move_dir)*0.3, -walksp, walksp);
 }
 
 if not k_dash and k_jump and floor_below {
@@ -24,7 +24,7 @@ if not k_dash and k_jump and floor_below {
 
     if self.in_dash {
 
-        self.hsp += dash_sp * sign(image_xscale) * 0.5 // Hyper Dash
+        self.momentum += dash_sp * sign(image_xscale) * 0.25 // Hyper Dash
         alarm[0] = 20;
 
     }
@@ -34,13 +34,14 @@ if not k_dash and k_jump and floor_below {
     self.in_dash = true;
     dash_sp = walksp*2;
     alarm[0] = 20;
-    hsp = (dash_sp*sign(image_xscale))*1.25;
+    momentum = (dash_sp*sign(image_xscale))*1.25;
 
 }
 
 vsp += grv;
-if hsp != 0 hsp -= _friction * sign(hsp)
-//if -_friction*2 < hsp < _friction*2 hsp = 0 // to cramp hsp to 0 in case friction from both the sides starts to give it siezures
+if (-0.15 < momentum && momentum < 0.15) momentum = 0; else momentum -= 0.15; // momentum worked in kinda funny way so friction is hard coded here
+if (accel != 0) accel -= _friction * sign(accel);
+hsp = momentum + accel;
 
 //  Checking for collision and then moving as per the calculated movement
 if place_meeting(x+hsp, y, obj_floor){
@@ -52,12 +53,14 @@ if place_meeting(x+hsp, y, obj_floor){
     }
     
     hsp = 0;
-    in_dash = false
+    momentum = 0;
+    accel = 0;
+    in_dash = false;
     
 }
 
 xprev = x; // xprev and yprev are used for checking if the player was in collision in the previous frame, this will be usefull at multiple places
-x += hsp;
+x = x + hsp;
 
 if place_meeting(x, y+vsp, obj_floor){
 
