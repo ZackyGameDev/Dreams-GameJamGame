@@ -159,7 +159,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(0, 00, momentem)
+            <string>draw_text(0, 00, momentum)
 draw_text(0, 10, accel)
 draw_text(0, 20, hsp)
 </string>
