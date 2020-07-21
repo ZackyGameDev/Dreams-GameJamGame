@@ -27,7 +27,7 @@ if not k_dash and k_jump and floor_below {
     self.in_dash = true;
     dash_sp = walksp*2;
     alarm[0] = 20;
-    if floor_below hsp += dash_sp*sign(image_xscale); else hsp = (dash_sp*sign(image_xscale))*1.25;
+    if floor_below hsp = dash_sp*sign(image_xscale); else hsp = (dash_sp*sign(image_xscale))*1.25;
 
 }
 
