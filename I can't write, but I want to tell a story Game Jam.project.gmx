@@ -2,19 +2,22 @@
 <assets hash="90D728905538675FC9CA238987E9BA81">
   <Configs name="configs">
     <Config>Configs\Default</Config>
-    <Config>Configs\DebugMode</Config>
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_player_collision_mask</sprite>
-    <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_something</sprite>
-    <sprite>sprites\spr_Bmusic</sprite>
-    <sprite>sprites\spr_Bstart</sprite>
-    <sprite>sprites\spr_Bexit</sprite>
-    <sprites name="player">
+    <sprites name="Player">
       <sprite>sprites\spr_player_idle</sprite>
+    </sprites>
+    <sprites name="Invisible Collision Markers">
+      <sprite>sprites\spr_player_collision_mask</sprite>
+      <sprite>sprites\spr_wall</sprite>
+    </sprites>
+    <sprites name="GUI Interectables">
+      <sprite>sprites\spr_Bstart</sprite>
+      <sprite>sprites\spr_Bmusic</sprite>
+      <sprite>sprites\spr_Bexit</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -40,12 +43,18 @@
     </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_player</object>
     <object>objects\obj_game</object>
-    <object>objects\obj_floor</object>
-    <object>objects\obj_Bstart</object>
-    <object>objects\obj_Bmusic</object>
-    <object>objects\obj_Bexit</object>
+    <objects name="Entities">
+      <object>objects\obj_player</object>
+    </objects>
+    <objects name="Invisible Collision Markers">
+      <object>objects\obj_floor</object>
+    </objects>
+    <objects name="GUI Interactables">
+      <object>objects\obj_Bstart</object>
+      <object>objects\obj_Bmusic</object>
+      <object>objects\obj_Bexit</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
