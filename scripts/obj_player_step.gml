@@ -40,7 +40,7 @@ if not k_dash and k_jump and floor_below {
 if (momentum == 0 or jumped_in_dash) vsp += grv; else if !(jumped_in_dash) self.vsp = 0;
 if (-0.15 < momentum && momentum < 0.15) momentum = 0; else momentum -= 0.15 * sign(momentum); // momentum worked in kinda funny way so friction is hard coded here
 if (accel != 0) accel -= _friction * sign(accel);
-hsp = int(momentum) + int(accel);
+if !(-0.5 < accel && accel < 0.5) hsp = int(momentum) + int(accel); else hsp = int(momentum);
 
 //  Checking for collision and then moving as per the calculated movement
 if place_meeting(x+hsp, y, obj_floor){
