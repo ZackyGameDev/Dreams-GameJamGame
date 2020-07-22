@@ -2,6 +2,7 @@
 <assets hash="90D728905538675FC9CA238987E9BA81">
   <Configs name="configs">
     <Config>Configs\Default</Config>
+    <Config>Configs\DebugMode</Config>
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
