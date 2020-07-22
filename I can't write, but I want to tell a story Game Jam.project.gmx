@@ -9,6 +9,9 @@
     <sprite>sprites\spr_player_collision_mask</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_something</sprite>
+    <sprite>sprites\spr_Bstart</sprite>
+    <sprite>sprites\spr_Bmusic</sprite>
+    <sprite>sprites\spr_Bexit</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -20,14 +23,28 @@
         <script>scripts\obj_player_create.gml</script>
         <script>scripts\obj_player_step.gml</script>
       </scripts>
+      <scripts name="obj_Bstart">
+        <script>scripts\obj_Bstart_step.gml</script>
+      </scripts>
+      <scripts name="obj_Bmusic">
+        <script>scripts\obj_Bmusic_left_pres.gml</script>
+        <script>scripts\obj_Bmusic_create.gml</script>
+      </scripts>
+      <scripts name="obj_Bexit">
+        <script>scripts\obj_Bexit_left_press.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_game</object>
     <object>objects\obj_floor</object>
+    <object>objects\obj_Bstart</object>
+    <object>objects\obj_Bmusic</object>
+    <object>objects\obj_Bexit</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_start</room>
     <room>rooms\rm_test</room>
   </rooms>
   <help>
