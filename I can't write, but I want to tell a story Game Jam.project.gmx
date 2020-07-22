@@ -2,6 +2,7 @@
 <assets hash="90D728905538675FC9CA238987E9BA81">
   <Configs name="configs">
     <Config>Configs\Default</Config>
+    <Config>Configs\DebugMode</Config>
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
@@ -9,12 +10,12 @@
     <sprite>sprites\spr_player_collision_mask</sprite>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_something</sprite>
-    <sprite>sprites\spr_Bstart</sprite>
     <sprite>sprites\spr_Bmusic</sprite>
     <sprite>sprites\spr_Bexit</sprite>
+    <sprites name="player">
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
-  <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\int.gml</script>
     <script>scripts\_sign.gml</script>

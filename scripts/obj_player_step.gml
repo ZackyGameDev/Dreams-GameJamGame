@@ -1,4 +1,4 @@
-k_left= keyboard_check(ord("A"))||keyboard_check(vk_left)|| gamepad_button_check(0, gp_padl);
+k_left = keyboard_check(ord("A"))||keyboard_check(vk_left)|| gamepad_button_check(0, gp_padl);
 k_right = keyboard_check(ord("D"))||keyboard_check(vk_right)|| gamepad_button_check(0, gp_padr);
 k_down = keyboard_check(ord("S"))||keyboard_check(vk_down)|| gamepad_button_check(0, gp_padd);
 k_jump= keyboard_check_pressed(ord("W"))||keyboard_check_pressed(vk_space)|| gamepad_button_check_pressed(0, gp_face1);
@@ -9,12 +9,10 @@ just_jumped = false;
 
 // Movement Calculation
 var move_dir = k_right - k_left;
-if !move_dir {
+if move_dir == 0  {
     move_dir = round(gamepad_axis_value(0, gp_axislh))
-}
-if move_dir != 0 {
-    accel = clamp(accel + (walksp * move_dir)*0.3, -walksp, walksp);
-}
+} 
+accel = clamp(accel + (walksp * move_dir)*0.3, -walksp, walksp);
 
 if not k_dash and k_jump and floor_below {
 
@@ -24,7 +22,7 @@ if not k_dash and k_jump and floor_below {
 
     if self.in_dash {
 
-        self.momentum += dash_sp * sign(image_xscale) * 0.25 // Hyper Dash
+        self.momentum += dash_sp * sign(image_xscale) * 0.35 // Hyper Dash
         alarm[0] = 20;
         jumped_in_dash = true;
 
@@ -33,23 +31,23 @@ if not k_dash and k_jump and floor_below {
 } else if k_dash {
     
     self.in_dash = true;
-    dash_sp = walksp*2;
-    alarm[0] = 20;
+    dash_sp = walksp*1.7;
+    alarm[0] = 40;
     momentum = (dash_sp*sign(image_xscale))*1.25;
 
 }
 
-if !(in_dash) vsp += grv;
-if (-0.15 < momentum && momentum < 0.15) momentum = 0; else momentum -= 0.15 * _sign(momentum); // momentum worked in kinda funny way so friction is hard coded here
+if (momentum == 0 or jumped_in_dash) vsp += grv; else if !(jumped_in_dash) self.vsp = 0;
+if (-0.15 < momentum && momentum < 0.15) momentum = 0; else momentum -= 0.15 * sign(momentum); // momentum worked in kinda funny way so friction is hard coded here
 if (accel != 0) accel -= _friction * sign(accel);
-hsp = momentum + accel;
+if !(-0.5 < accel && accel < 0.5) hsp = int(momentum) + int(accel); else hsp = int(momentum);
 
 //  Checking for collision and then moving as per the calculated movement
 if place_meeting(x+hsp, y, obj_floor){
 
-    while !place_meeting(x+_sign(hsp), y, obj_floor){
+    while !place_meeting(x+sign(hsp), y, obj_floor){
     
-        x += _sign(hsp);
+        x += sign(hsp);
         
     }
     
@@ -65,9 +63,9 @@ x = x + hsp;
 
 if place_meeting(x, y+vsp, obj_floor){
 
-    while not place_meeting(x, y+_sign(vsp), obj_floor){
+    while not place_meeting(x, y+sign(vsp), obj_floor){
     
-        y += _sign(vsp);
+        y += sign(vsp);
         
     }
     
@@ -96,4 +94,4 @@ if floor_below {
 }
 */
 
-if hsp != 0 self.image_xscale= _sign(hsp)
+if hsp != 0 self.image_xscale= sign(hsp)
