@@ -11,8 +11,10 @@
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_something</sprite>
     <sprite>sprites\spr_Bmusic</sprite>
+    <sprite>sprites\spr_Bstart</sprite>
     <sprite>sprites\spr_Bexit</sprite>
     <sprites name="player">
+      <sprite>sprites\spr_player_idle</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
