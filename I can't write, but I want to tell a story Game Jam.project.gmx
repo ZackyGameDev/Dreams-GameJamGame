@@ -40,12 +40,18 @@
       <scripts name="obj_Bexit">
         <script>scripts\obj_Bexit_left_press.gml</script>
       </scripts>
+      <scripts name="obj_cam">
+        <script>scripts\obj_cam_step.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_game</object>
     <objects name="Entities">
       <object>objects\obj_player</object>
+    </objects>
+    <objects name="Invisible Helpers">
+      <object>objects\obj_cam</object>
     </objects>
     <objects name="Invisible Collision Markers">
       <object>objects\obj_floor</object>
