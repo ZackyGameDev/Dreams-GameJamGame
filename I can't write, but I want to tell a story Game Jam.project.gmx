@@ -6,7 +6,10 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_something</sprite>
+    <sprites name="Invisible Helpers">
+      <sprite>sprites\spr_something</sprite>
+      <sprite>sprites\spr_camera</sprite>
+    </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_player_idle</sprite>
     </sprites>
@@ -46,12 +49,12 @@
     </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_game</object>
-    <objects name="Entities">
-      <object>objects\obj_player</object>
-    </objects>
     <objects name="Invisible Helpers">
       <object>objects\obj_cam</object>
+      <object>objects\obj_game</object>
+    </objects>
+    <objects name="Entities">
+      <object>objects\obj_player</object>
     </objects>
     <objects name="Invisible Collision Markers">
       <object>objects\obj_floor</object>
