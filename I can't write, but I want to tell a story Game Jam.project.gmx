@@ -29,6 +29,7 @@
         <sprite>sprites\spr_sh_Nmap_wave_distort_large</sprite>
       </sprites>
     </sprites>
+    <sprite>sprites\sprite11</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -56,12 +57,10 @@
     </scripts>
     <scripts name="Shader Object Scripts">
       <scripts name="Shockwave Distortion">
-        <scripts name="Shockwave Distortion">
-          <script>scripts\scr_sh_shockwave_distort_create.gml</script>
-          <script>scripts\scr_sh_shockwave_distort_step.gml</script>
-          <script>scripts\scr_sh_shockwave_distort_clean_up.gml</script>
-          <script>scripts\scr_sh_shockwave_distort_draw_gui_begin.gml</script>
-        </scripts>
+        <script>scripts\scr_sh_shockwave_distort_create.gml</script>
+        <script>scripts\scr_sh_shockwave_distort_step.gml</script>
+        <script>scripts\scr_sh_shockwave_distort_clean_up.gml</script>
+        <script>scripts\scr_sh_shockwave_distort_draw_gui_begin.gml</script>
       </scripts>
     </scripts>
   </scripts>

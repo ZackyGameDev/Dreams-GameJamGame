@@ -1,3 +1,18 @@
+
+
+
+
+
+
+// not possible with outdated GML of GM:S 1.x im giving up on this idea
+
+
+
+
+
+
+
+/*
 var wave_list_size = ds_list_size(list_of_waves);
 
 if (wave_list_size <= 0) {
