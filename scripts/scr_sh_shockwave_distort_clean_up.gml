@@ -10,3 +10,5 @@ if (ds_exists(list_of_waves, ds_type_list)) {
 }
 
 if (surface_exists(srf_waves)) surface_free(srf_waves);
+
+// not possible with outdated GML of GM:S 1.x im giving up on this idea

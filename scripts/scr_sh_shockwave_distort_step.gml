@@ -40,3 +40,5 @@ if (wave_list_size > 0) {
 //-----------------------------------------------------------------------------
 if (toggle_get_state(0, 0))	layer_set_visible("tlyr_blue_grid", true);
 else						layer_set_visible("tlyr_blue_grid", false);
+
+// not possible with outdated GML of GM:S 1.x im giving up on this idea

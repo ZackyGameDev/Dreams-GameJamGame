@@ -68,3 +68,4 @@ if (wave_list_size <= 0) {
     }
 }
 
+// not possible with outdated GML of GM:S 1.x im giving up on this idea
