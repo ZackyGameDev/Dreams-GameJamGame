@@ -9,6 +9,7 @@
     <sprites name="Invisible Helpers">
       <sprite>sprites\spr_something</sprite>
       <sprite>sprites\spr_camera</sprite>
+      <sprite>sprites\spr_shader_handler</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_player_idle</sprite>
@@ -22,6 +23,12 @@
       <sprite>sprites\spr_Bmusic</sprite>
       <sprite>sprites\spr_Bexit</sprite>
     </sprites>
+    <sprites name="Shader Dependencies">
+      <sprites name="Normal Maps">
+        <sprite>sprites\spr_sh_Nmap_wave_distort_small</sprite>
+        <sprite>sprites\spr_sh_Nmap_wave_distort_large</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -30,24 +37,38 @@
     <script>scripts\_sign.gml</script>
     <scripts name="Object Scripts">
       <scripts name="obj_player">
-        <script>scripts\obj_player_create.gml</script>
-        <script>scripts\obj_player_step.gml</script>
+        <script>scripts\scr_obj_player_create.gml</script>
+        <script>scripts\scr_obj_player_step.gml</script>
       </scripts>
       <scripts name="obj_Bstart">
-        <script>scripts\obj_Bstart_step.gml</script>
+        <script>scripts\scr_obj_Bstart_step.gml</script>
       </scripts>
       <scripts name="obj_Bmusic">
-        <script>scripts\obj_Bmusic_left_pres.gml</script>
-        <script>scripts\obj_Bmusic_create.gml</script>
+        <script>scripts\scr_obj_Bmusic_left_pres.gml</script>
+        <script>scripts\scr_obj_Bmusic_create.gml</script>
       </scripts>
       <scripts name="obj_Bexit">
-        <script>scripts\obj_Bexit_left_press.gml</script>
+        <script>scripts\scr_obj_Bexit_left_press.gml</script>
       </scripts>
       <scripts name="obj_cam">
-        <script>scripts\obj_cam_step.gml</script>
+        <script>scripts\scr_obj_cam_step.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="Shader Object Scripts">
+      <scripts name="Shockwave Distortion">
+        <scripts name="Shockwave Distortion">
+          <script>scripts\scr_sh_shockwave_distort_create.gml</script>
+          <script>scripts\scr_sh_shockwave_distort_step.gml</script>
+          <script>scripts\scr_sh_shockwave_distort_clean_up.gml</script>
+          <script>scripts\scr_sh_shockwave_distort_draw.gml</script>
+          <script>scripts\scr_sh_shockwave_distort_draw_gui_begin.gml</script>
+        </scripts>
       </scripts>
     </scripts>
   </scripts>
+  <shaders name="shaders">
+    <shader type="GLSLES">shaders\sh_shockwave_distortion.shader</shader>
+  </shaders>
   <objects name="objects">
     <objects name="Invisible Helpers">
       <object>objects\obj_cam</object>
@@ -63,6 +84,9 @@
       <object>objects\obj_Bstart</object>
       <object>objects\obj_Bmusic</object>
       <object>objects\obj_Bexit</object>
+    </objects>
+    <objects name="Shader Handlers">
+      <object>objects\obj_sh_shockwave_distort</object>
     </objects>
   </objects>
   <rooms name="rooms">

@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>window_set_fullscreen(false);
-//hey future me please maintain cleanliness here
-
+            <string>if !(instance_exists(obj_sh_shockwave_distort)) {
+    instance_create(self.x, self.y, obj_sh_shockwave_distort);
+}
 </string>
           </argument>
         </arguments>
