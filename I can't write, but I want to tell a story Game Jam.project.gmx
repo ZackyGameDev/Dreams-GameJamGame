@@ -60,7 +60,6 @@
           <script>scripts\scr_sh_shockwave_distort_create.gml</script>
           <script>scripts\scr_sh_shockwave_distort_step.gml</script>
           <script>scripts\scr_sh_shockwave_distort_clean_up.gml</script>
-          <script>scripts\scr_sh_shockwave_distort_draw.gml</script>
           <script>scripts\scr_sh_shockwave_distort_draw_gui_begin.gml</script>
         </scripts>
       </scripts>
