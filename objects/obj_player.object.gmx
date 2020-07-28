@@ -162,6 +162,13 @@
             <string>draw_text_transformed(0, 00, momentum, 2, 2, 0)
 draw_text_transformed(0, 25, accel, 2, 2, 0)
 draw_text_transformed(0, 50, hsp, 2, 2, 0)
+if keyboard_check(ord("W")) {
+    draw_text_transformed(view_xview[0], view_yview[0] + 75,  (window_mouse_get_y()-250)/500, 2, 2, 0);
+    draw_text_transformed(view_xview[0], view_yview[0] + 100, (window_mouse_get_x()-250)/1000, 2, 2, 0);
+} else {
+    draw_text_transformed(0, 75,  (window_mouse_get_y()-250)/150, 2, 2, 0);
+    draw_text_transformed(0, 100, (window_mouse_get_x()-250)/300, 2, 2, 0);
+}
 </string>
           </argument>
         </arguments>

@@ -29,9 +29,28 @@
         <sprite>sprites\spr_sh_Nmap_wave_distort_large</sprite>
       </sprites>
     </sprites>
-    <sprite>sprites\sprite11</sprite>
+    <sprites name="Tilesets">
+      <sprite>sprites\spr_tileset_stage1_1</sprite>
+    </sprites>
+    <sprites name="Backgrounds">
+      <sprite>sprites\spr_bg_clouds</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <backgrounds name="Clouds">
+      <backgrounds name="Old">
+        <background>background\bg_clouds1old</background>
+        <background>background\bg_clouds2old</background>
+        <background>background\bg_clouds3old</background>
+        <background>background\bg_clouds4old</background>
+        <background>background\bg_clouds5old</background>
+        <background>background\bg_clouds6old</background>
+      </backgrounds>
+      <background>background\bg_clouds0</background>
+      <background>background\bg_clouds1</background>
+      <background>background\bg_clouds2</background>
+    </backgrounds>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\int.gml</script>
@@ -63,9 +82,13 @@
         <script>scripts\scr_sh_shockwave_distort_draw_gui_begin.gml</script>
       </scripts>
     </scripts>
+    <scripts name="Self Working Scripts">
+      <script>scripts\draw_background_with_scroll.gml</script>
+    </scripts>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\sh_shockwave_distortion.shader</shader>
+    <shader type="GLSLES">shaders\sh_bloom.shader</shader>
   </shaders>
   <objects name="objects">
     <objects name="Invisible Helpers">

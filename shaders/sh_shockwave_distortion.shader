@@ -1,4 +1,4 @@
-//
+// All the magic is in the magic is in the Fragment Shader
 // Simple passthrough vertex shader
 //
 attribute vec3 in_Position;                  // (x,y,z)
@@ -19,7 +19,7 @@ void main() {
     
 }
 
-//######################_==_YOYO_SHADER_MARKER_==_######################@~
+//######################_==_YOYO_SHADER_MARKER_==_######################@~// i wanna die
 varying vec2        v_vTexcoord;
 
 uniform float        fx_strength;
