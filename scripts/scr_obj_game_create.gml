@@ -1,6 +1,20 @@
 window_set_caption('Dreams')
 self.depth = 100;
 ////////////////////////////////////////////////////////////////////////////
+// Creating the obj_foor tiles on the room borders because i am too lazy to do it by hand
+if room != rm_start {
+    var rw, rh, i;
+
+    rw = room_width;
+    rh = room_height;
+
+    while rw%8 != 0 { rw-- }
+    while rh%8 != 0 { rh-- }
+
+    for(i=0; i<=rw/8; i++) { instance_create(i*8, rh, obj_floor); instance_create(i*8, 0, obj_floor); } // Bottom and top Border
+    for(i=0; i<=rh/8; i++) { instance_create(rw, i*8, obj_floor); instance_create(0, i*8, obj_floor); } // Right and left Border
+}
+////////////////////////////////////////////////////////////////////////////
 // Resizing Window to fit on screen
 
 var win_x, win_y, win_w, win_h;
@@ -40,7 +54,7 @@ switch room {
         
     break;
     
-    default: backgrounds = noone; break; // I later add a check in the draw event that only draws the background if the variable is not `noone`
+    default: backgrounds[0] = noone; break; // I later add a check in the draw event that only draws the background if the variable is not `noone`
 
 }
 

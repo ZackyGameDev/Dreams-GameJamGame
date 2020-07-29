@@ -93,6 +93,7 @@
     </scripts>
     <scripts name="Self Working Scripts">
       <script>scripts\draw_background_with_scroll.gml</script>
+      <script>scripts\scr_autotile.gml</script>
     </scripts>
   </scripts>
   <shaders name="shaders">
@@ -107,7 +108,7 @@
     <objects name="Entities">
       <object>objects\obj_player</object>
     </objects>
-    <objects name="Invisible Collision Markers">
+    <objects name="Map Tiles">
       <object>objects\obj_floor</object>
       <object>objects\obj_props</object>
     </objects>

@@ -9,10 +9,12 @@ switch room {
     break;
 }
 
+// Auto tiling
+alarm[0] = random_range(5, 250); // no real reason to keep it random except for funzies
+
 // Props
-if !(place_meeting(x, y-1, obj_floor)) {
-    if random_range(0, 20) == 0 {
-        props = instance_create(x, y, obj_props);
-        props.sprite_index = spr_props;
+if !place_meeting(x, y-sprite_width, obj_floor) {
+    if !random_range(0, 5) {
+        instance_create(x, y, obj_props);
     }
 }

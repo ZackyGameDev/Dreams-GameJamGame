@@ -100,7 +100,7 @@ if keyboard_check_pressed(ord("F")) {
             <kind>1</kind>
             <string>/// Background
 
-if (backgrounds != noone) background_scroll = draw_background_with_scroll(background_scroll, bg_scroll_amount, backgrounds);
+if (backgrounds[0] != noone) background_scroll = draw_background_with_scroll(background_scroll, bg_scroll_amount, backgrounds);
 
 </string>
           </argument>
