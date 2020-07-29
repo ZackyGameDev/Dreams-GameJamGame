@@ -59,6 +59,9 @@
     <script>scripts\int.gml</script>
     <script>scripts\_sign.gml</script>
     <scripts name="Object Scripts">
+      <scripts name="obj_game">
+        <script>scripts\scr_obj_game_create.gml</script>
+      </scripts>
       <scripts name="obj_player">
         <script>scripts\scr_obj_player_create.gml</script>
         <script>scripts\scr_obj_player_step.gml</script>
