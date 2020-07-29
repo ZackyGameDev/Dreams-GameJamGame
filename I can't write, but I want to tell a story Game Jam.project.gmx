@@ -31,6 +31,9 @@
     </sprites>
     <sprites name="Tilesets">
       <sprite>sprites\spr_tileset_stage1_1</sprite>
+      <sprites name="Decorations or something idk what you call these">
+        <sprite>sprites\spr_decorations_stage1_1</sprite>
+      </sprites>
     </sprites>
     <sprites name="Backgrounds">
       <sprite>sprites\spr_bg_clouds</sprite>
