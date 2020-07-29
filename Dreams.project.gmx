@@ -32,7 +32,7 @@
     <sprites name="Tilesets">
       <sprite>sprites\spr_tileset_stage1_1</sprite>
       <sprites name="Decorations or something idk what you call these">
-        <sprite>sprites\spr_decorations_stage1_1</sprite>
+        <sprite>sprites\spr_props_stage1_1</sprite>
       </sprites>
     </sprites>
     <sprites name="Backgrounds">
@@ -76,6 +76,9 @@
       <scripts name="obj_cam">
         <script>scripts\scr_obj_cam_step.gml</script>
       </scripts>
+      <scripts name="obj_floor">
+        <script>scripts\obj_floor_create.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Shader Object Scripts">
       <scripts name="Shockwave Distortion">
@@ -103,6 +106,7 @@
     </objects>
     <objects name="Invisible Collision Markers">
       <object>objects\obj_floor</object>
+      <object>objects\obj_props</object>
     </objects>
     <objects name="GUI Interactables">
       <object>objects\obj_Bstart</object>
