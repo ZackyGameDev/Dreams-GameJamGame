@@ -10,6 +10,7 @@
       <sprite>sprites\spr_something</sprite>
       <sprite>sprites\spr_camera</sprite>
       <sprite>sprites\spr_shader_handler</sprite>
+      <sprite>sprites\spr_Rstr</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_player_idle</sprite>
@@ -73,6 +74,9 @@
       <scripts name="obj_cam">
         <script>scripts\scr_obj_cam_step.gml</script>
       </scripts>
+      <scripts name="obj_Rstr">
+        <script>scripts\obj_Rstr_step.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Shader Object Scripts">
       <scripts name="Shockwave Distortion">
@@ -94,6 +98,7 @@
     <objects name="Invisible Helpers">
       <object>objects\obj_cam</object>
       <object>objects\obj_game</object>
+      <object>objects\obj_Rstr</object>
     </objects>
     <objects name="Entities">
       <object>objects\obj_player</object>
@@ -113,6 +118,7 @@
   <rooms name="rooms">
     <room>rooms\rm_start</room>
     <room>rooms\rm_test</room>
+    <room>rooms\rm_test2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -42,6 +42,17 @@ switch room {
         bg_scroll_amount[2] =  1/6;
         
     break;
+    case rm_test2: 
+        backgrounds[0] = bg_clouds0;
+        backgrounds[1] = bg_clouds1;
+        backgrounds[2] = bg_clouds2;
+        
+        bg_scroll_amount[0] = 1/14;
+        bg_scroll_amount[1] = 1/10;
+        bg_scroll_amount[2] =  1/6;
+        
+    break;
+
 
 }
 
