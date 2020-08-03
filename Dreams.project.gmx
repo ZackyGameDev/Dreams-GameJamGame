@@ -66,6 +66,7 @@
       <scripts name="obj_player">
         <script>scripts\scr_obj_player_create.gml</script>
         <script>scripts\scr_obj_player_step.gml</script>
+        <script>scripts\scr_obj_player_collide_obj_room.gml</script>
       </scripts>
       <scripts name="obj_Bstart">
         <script>scripts\scr_obj_Bstart_step.gml</script>
@@ -78,6 +79,7 @@
         <script>scripts\scr_obj_Bexit_left_press.gml</script>
       </scripts>
       <scripts name="obj_cam">
+        <script>scripts\scr_obj_cam_create.gml</script>
         <script>scripts\scr_obj_cam_step.gml</script>
       </scripts>
       <scripts name="obj_floor">
@@ -112,6 +114,7 @@
     <objects name="Map Tiles">
       <object>objects\obj_floor</object>
       <object>objects\obj_props</object>
+      <object>objects\obj_room</object>
     </objects>
     <objects name="GUI Interactables">
       <object>objects\obj_Bstart</object>

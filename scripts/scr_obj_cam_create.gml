@@ -1,2 +1,2 @@
-right_border = room_width - view_wview[0];
-left_border = 0;
+current_rm_obj_x = 0;
+current_rm_obj_y = 0;

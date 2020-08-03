@@ -1,2 +1,2 @@
-right_border = room_width - view_wview[0];
-left_border = 0;
+border_left = 0;
+border_right = room_width - view_wview[0];
