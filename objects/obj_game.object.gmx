@@ -76,6 +76,7 @@ if keyboard_check_pressed(ord("F")) {
         case false: window_set_fullscreen(true); break;
     }
 }
+
 </string>
           </argument>
         </arguments>

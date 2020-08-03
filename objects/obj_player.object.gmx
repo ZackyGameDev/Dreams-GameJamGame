@@ -159,7 +159,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text_transformed(0, 00, momentum, 2, 2, 0)
+            <string>/*
+draw_text_transformed(0, 00, momentum, 2, 2, 0)
 draw_text_transformed(0, 25, accel, 2, 2, 0)
 draw_text_transformed(0, 50, hsp, 2, 2, 0)
 if keyboard_check(ord("W")) {
@@ -169,6 +170,48 @@ if keyboard_check(ord("W")) {
     draw_text_transformed(0, 75,  (window_mouse_get_y()-250)/150, 2, 2, 0);
     draw_text_transformed(0, 100, (window_mouse_get_x()-250)/300, 2, 2, 0);
 }
+*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// If I change the self.image_xscale and let
+// GameMaker: Studio Draw the player itself, 
+// Then it flips the sprite, but the collision
+// Mask of this object, a.k.a. obj_player as 
+// Well, and that was causing some awkward 
+// moments which made the player to simply 
+// get stuck in the wall for a reason that is 
+// too long for me to type into this already 
+// too long comment. Forgive me Convention Gods
+// for I just made an extra long comment
+// Well not really because 
+// 1. There are no real convention gods {duh.}
+// 2. I like turtles
+// anyway
+// you know I am kinda confused about what I should add
+// to the game now. Like seriously, what should I?
+// man here i go again
+
+draw_sprite_ext(sprite_index,image_index, x, y, round(img_xscale), image_yscale, image_angle, c_white, image_alpha);
 </string>
           </argument>
         </arguments>

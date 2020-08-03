@@ -10,7 +10,7 @@ switch room {
 }
 
 // Auto tiling
-alarm[0] = random_range(5, 250); // no real reason to keep it random except for funzies
+alarm[0] = 5; // I have to wait for obj_game to draw the border tiles before I decide to AUTOTILE
 
 // Props
 if !place_meeting(x, y-sprite_width, obj_floor) {

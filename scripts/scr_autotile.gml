@@ -5,10 +5,6 @@ w_left      = place_meeting(x-iw,y,object_index);
 w_right     = place_meeting(x+iw,y,object_index);
 w_up        = place_meeting(x,y-iw,object_index);
 w_down      = place_meeting(x,y+iw,object_index);
-w_upleft    = place_meeting(x-iw,y-iw,object_index);
-w_downleft  = place_meeting(x-iw,y+iw,object_index);
-w_upright   = place_meeting(x+iw,y-iw,object_index);
-w_downright = place_meeting(x+iw,y+iw,object_index);
 
 if not w_up {
     if w_right and w_left {

@@ -22,7 +22,7 @@ if not k_dash and k_jump and floor_below {
 
     if self.in_dash {
 
-        self.momentum += dash_sp * sign(image_xscale) * 0.35 // Hyper Dash
+        self.momentum += dash_sp * sign(img_xscale) * 0.35 // Hyper Dash
         alarm[0] = 20;
         jumped_in_dash = true;
 
@@ -33,7 +33,7 @@ if not k_dash and k_jump and floor_below {
     self.in_dash = true;
     dash_sp = walksp*1.7;
     alarm[0] = 40;
-    momentum = (dash_sp*sign(image_xscale))*1.25;
+    momentum = (dash_sp*sign(img_xscale))*1.25;
 
 }
 
@@ -41,6 +41,9 @@ if (momentum == 0 or jumped_in_dash) vsp += grv; else if !(jumped_in_dash) self.
 if (-0.15 < momentum && momentum < 0.15) momentum = 0; else momentum -= 0.15 * sign(momentum); // momentum worked in kinda funny way so friction is hard coded here
 if (accel != 0) accel -= _friction * sign(accel);
 if !(-0.5 < accel && accel < 0.5) hsp = int(momentum) + int(accel); else hsp = int(momentum);
+
+// Fliping the player's sprite based on where it is facing 
+if hsp != 0 self.img_xscale= sign(hsp);
 
 //  Checking for collision and then moving as per the calculated movement
 if place_meeting(x+hsp, y, obj_floor){
@@ -92,6 +95,6 @@ if floor_below {
         self.sprite_index = spr_player_fall;
     }
 }
-*/
+*/// I should really get the sprites drawn but drawing with mouse is   t o r t u r e
 
-if hsp != 0 self.image_xscale= sign(hsp)
+
