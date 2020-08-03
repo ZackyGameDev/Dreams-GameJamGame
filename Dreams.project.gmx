@@ -32,9 +32,6 @@
     </sprites>
     <sprites name="Tilesets">
       <sprite>sprites\spr_tileset_stage1_1</sprite>
-      <sprites name="Decorations or something idk what you call these">
-        <sprite>sprites\spr_props_stage1_1</sprite>
-      </sprites>
     </sprites>
     <sprites name="Backgrounds">
       <sprite>sprites\spr_bg_clouds</sprite>
@@ -60,9 +57,6 @@
     <script>scripts\int.gml</script>
     <script>scripts\_sign.gml</script>
     <scripts name="Object Scripts">
-      <scripts name="obj_game">
-        <script>scripts\scr_obj_game_create.gml</script>
-      </scripts>
       <scripts name="obj_player">
         <script>scripts\scr_obj_player_create.gml</script>
         <script>scripts\scr_obj_player_step.gml</script>
@@ -82,9 +76,6 @@
       </scripts>
       <scripts name="obj_Rstr">
         <script>scripts\obj_Rstr_step.gml</script>
-        </scripts>
-      <scripts name="obj_floor">
-        <script>scripts\obj_floor_create.gml</script>
       </scripts>
     </scripts>
     <scripts name="Shader Object Scripts">
@@ -97,7 +88,6 @@
     </scripts>
     <scripts name="Self Working Scripts">
       <script>scripts\draw_background_with_scroll.gml</script>
-      <script>scripts\scr_autotile.gml</script>
     </scripts>
   </scripts>
   <shaders name="shaders">
@@ -113,9 +103,8 @@
     <objects name="Entities">
       <object>objects\obj_player</object>
     </objects>
-    <objects name="Map Tiles">
+    <objects name="Invisible Collision Markers">
       <object>objects\obj_floor</object>
-      <object>objects\obj_props</object>
     </objects>
     <objects name="GUI Interactables">
       <object>objects\obj_Bstart</object>
