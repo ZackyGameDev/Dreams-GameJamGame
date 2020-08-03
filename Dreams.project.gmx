@@ -17,6 +17,7 @@
     <sprites name="Invisible Collision Markers">
       <sprite>sprites\spr_player_collision_mask</sprite>
       <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_room</sprite>
     </sprites>
     <sprites name="GUI Interectables">
       <sprite>sprites\spr_Bstart</sprite>
