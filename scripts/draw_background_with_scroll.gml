@@ -12,7 +12,7 @@ for (i = 0; i < array_length_1d(backgrounds); i++) {
     scrollx[i] += scroll_amount[i];
     if scrollx[i] >= background_get_width(backgrounds[i])-10 {
         scrollx[i] -= background_get_width(backgrounds[i]);
-        show_message("ye boi It happenned")
+        //show_message("ye boi It happenned")
     }
     
     draw_background(backgrounds[i], x + scrollx[i] - background_get_width(backgrounds[i]), 0);
