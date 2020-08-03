@@ -1,5 +1,5 @@
-var obj_room_id = instance_place(obj_player.x, obj_player.y, obj_Rstr);
-right_border_for_camera = obj_room_id.bbox_right;
-left_border_for_camera = obj_room_id.bbox_left;
-x += obj_player.x;
-y += obj_player.y;
+view_xview = clamp (x - view_wview / 2, 0, room_width - view_wview[0]);
+view_yview = clamp (y - view_hview / 2, 0, room_height- view_hview[0]);
+
+x += (obj_player.x - x) / 10;
+y += (obj_player.y - y) / 10;
