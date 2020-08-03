@@ -17,6 +17,7 @@
     <sprites name="Invisible Collision Markers">
       <sprite>sprites\spr_player_collision_mask</sprite>
       <sprite>sprites\spr_wall</sprite>
+      <sprite>sprites\spr_room</sprite>
     </sprites>
     <sprites name="GUI Interectables">
       <sprite>sprites\spr_Bstart</sprite>
@@ -59,6 +60,7 @@
       <scripts name="obj_player">
         <script>scripts\scr_obj_player_create.gml</script>
         <script>scripts\scr_obj_player_step.gml</script>
+        <script>scripts\scr_obj_player_collide_obj_room.gml</script>
       </scripts>
       <scripts name="obj_Bstart">
         <script>scripts\scr_obj_Bstart_step.gml</script>
@@ -71,6 +73,7 @@
         <script>scripts\scr_obj_Bexit_left_press.gml</script>
       </scripts>
       <scripts name="obj_cam">
+        <script>scripts\scr_obj_cam_create.gml</script>
         <script>scripts\scr_obj_cam_step.gml</script>
       </scripts>
     </scripts>
@@ -100,6 +103,8 @@
     </objects>
     <objects name="Invisible Collision Markers">
       <object>objects\obj_floor</object>
+      <object>objects\obj_props</object>
+      <object>objects\obj_room</object>
     </objects>
     <objects name="GUI Interactables">
       <object>objects\obj_Bstart</object>
@@ -113,6 +118,7 @@
   <rooms name="rooms">
     <room>rooms\rm_start</room>
     <room>rooms\rm_test</room>
+    <room>rooms\rm_test_room</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
