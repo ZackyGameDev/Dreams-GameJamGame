@@ -119,6 +119,7 @@
     <shader type="GLSLES">shaders\sh_bloom.shader</shader>
     <shader type="GLSLES">shaders\sh_main.shader</shader>
   </shaders>
+  <fonts name="fonts"/>
   <objects name="objects">
     <objects name="Invisible Helpers">
       <object>objects\obj_cam</object>
