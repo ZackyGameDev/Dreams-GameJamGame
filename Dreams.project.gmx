@@ -60,7 +60,6 @@
   <scripts name="scripts">
     <script>scripts\int.gml</script>
     <script>scripts\_sign.gml</script>
-    <script>scripts\scr_text.gml</script>
     <scripts name="Object Scripts">
       <scripts name="obj_game">
         <script>scripts\scr_obj_game_create.gml</script>
@@ -97,6 +96,7 @@
       </scripts>
     </scripts>
     <scripts name="Self Working Scripts">
+      <script>scripts\scr_text.gml</script>
       <script>scripts\draw_background_with_scroll.gml</script>
       <script>scripts\scr_autotile.gml</script>
     </scripts>
