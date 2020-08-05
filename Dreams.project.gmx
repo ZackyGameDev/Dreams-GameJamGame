@@ -39,6 +39,7 @@
     <sprites name="Backgrounds">
       <sprite>sprites\spr_bg_clouds</sprite>
     </sprites>
+    <sprite>sprites\spr_crystal</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Clouds">
@@ -59,6 +60,7 @@
   <scripts name="scripts">
     <script>scripts\int.gml</script>
     <script>scripts\_sign.gml</script>
+    <script>scripts\scr_text.gml</script>
     <scripts name="Object Scripts">
       <scripts name="obj_game">
         <script>scripts\scr_obj_game_create.gml</script>
@@ -103,10 +105,15 @@
     <shader type="GLSLES">shaders\sh_shockwave_distortion.shader</shader>
     <shader type="GLSLES">shaders\sh_bloom.shader</shader>
   </shaders>
+  <fonts name="fonts">
+    <font>fonts\fnt</font>
+  </fonts>
   <objects name="objects">
     <objects name="Invisible Helpers">
       <object>objects\obj_cam</object>
       <object>objects\obj_game</object>
+      <object>objects\obj_text</object>
+      <object>objects\obj_TextS</object>
     </objects>
     <objects name="Entities">
       <object>objects\obj_player</object>
@@ -124,6 +131,7 @@
     <objects name="Shader Handlers">
       <object>objects\obj_sh_shockwave_distort</object>
     </objects>
+    <object>objects\obj_crystal</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
