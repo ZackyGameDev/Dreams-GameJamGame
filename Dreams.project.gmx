@@ -122,6 +122,7 @@
       <object>objects\obj_floor</object>
       <object>objects\obj_props</object>
       <object>objects\obj_room</object>
+      <object>objects\obj_crystal</object>
     </objects>
     <objects name="GUI Interactables">
       <object>objects\obj_Bstart</object>
@@ -131,7 +132,6 @@
     <objects name="Shader Handlers">
       <object>objects\obj_sh_shockwave_distort</object>
     </objects>
-    <object>objects\obj_crystal</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>

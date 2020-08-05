@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>4194304</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>obj_game.Dlimit = 1;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <makerSettings>
@@ -155,7 +155,6 @@
     <instance objName="obj_floor" x="104" y="128" name="inst_9855A8E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="88" y="136" name="inst_DCEC6956" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="80" y="120" name="inst_B096FE96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_cam" x="648" y="456" name="inst_CD3FDADD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="112" y="104" name="inst_E4EC0020" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="112" y="112" name="inst_0E27C65D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="112" y="120" name="inst_4B2E323E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1173,7 +1172,6 @@
     <instance objName="obj_room" x="152" y="416" name="inst_B241BC28" locked="0" code="" scaleX="0.925000011920929" scaleY="0.677777767181396" colour="4294967295" rotation="0"/>
     <instance objName="obj_room" x="448" y="416" name="inst_36F3C7F7" locked="0" code="" scaleX="0.925000011920929" scaleY="0.677777767181396" colour="4294967295" rotation="0"/>
     <instance objName="obj_room" x="760" y="416" name="inst_FFB11B73" locked="0" code="" scaleX="0.925000011920929" scaleY="0.677777767181396" colour="4294967295" rotation="0"/>
-    <instance objName="obj_TextS" x="176" y="48" name="inst_47010234" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_crystal" x="440" y="56" name="inst_8F273573" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
