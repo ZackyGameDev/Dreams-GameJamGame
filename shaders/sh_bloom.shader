@@ -1,6 +1,4 @@
 // All the magicc is in the fragment shader
-// Simple passthrough vertex shader
-//
 attribute vec3 in_Position;                  // (x,y,z)
 attribute vec4 in_Colour;                    // (r,g,b,a)
 attribute vec2 in_TextureCoord;              // (u,v)
@@ -19,8 +17,7 @@ void main() {
 
 }
 
-//######################_==_YOYO_SHADER_MARKER_==_######################@~
-varying vec2 v_vTexcoord;
+//######################_==_YOYO_SHADER_MARKER_==_######################@~varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 uniform float blurSize;
 uniform float intensity;

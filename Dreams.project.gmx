@@ -13,11 +13,13 @@
     </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_player_idle</sprite>
-    </sprites>
-    <sprites name="Invisible Collision Markers">
       <sprite>sprites\spr_player_collision_mask</sprite>
+    </sprites>
+    <sprites name="Map TIle Markers">
       <sprite>sprites\spr_wall</sprite>
       <sprite>sprites\spr_room</sprite>
+      <sprite>sprites\spr_spring</sprite>
+      <sprite>sprites\spr_spike</sprite>
     </sprites>
     <sprites name="GUI Interectables">
       <sprite>sprites\spr_Bstart</sprite>
@@ -57,33 +59,43 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\int.gml</script>
-    <script>scripts\_sign.gml</script>
     <scripts name="Object Scripts">
-      <scripts name="obj_game">
-        <script>scripts\scr_obj_game_create.gml</script>
+      <scripts name="Invisible Helpers">
+        <scripts name="obj_game">
+          <script>scripts\scr_obj_game_create.gml</script>
+        </scripts>
+        <scripts name="obj_cam">
+          <script>scripts\scr_obj_cam_create.gml</script>
+          <script>scripts\scr_obj_cam_step.gml</script>
+        </scripts>
       </scripts>
-      <scripts name="obj_player">
-        <script>scripts\scr_obj_player_create.gml</script>
-        <script>scripts\scr_obj_player_step.gml</script>
-        <script>scripts\scr_obj_player_collide_obj_room.gml</script>
+      <scripts name="Entities">
+        <scripts name="obj_player">
+          <script>scripts\scr_obj_player_create.gml</script>
+          <script>scripts\scr_obj_player_step.gml</script>
+          <script>scripts\scr_obj_player_collide_obj_room.gml</script>
+        </scripts>
       </scripts>
-      <scripts name="obj_Bstart">
-        <script>scripts\scr_obj_Bstart_step.gml</script>
+      <scripts name="Map tiles">
+        <scripts name="obj_floor">
+          <script>scripts\scr_obj_floor_create.gml</script>
+        </scripts>
+        <scripts name="obj_spring">
+          <script>scripts\scr_obj_spring_step.gml</script>
+          <script>scripts\scr_obj_spring_create.gml</script>
+        </scripts>
       </scripts>
-      <scripts name="obj_Bmusic">
-        <script>scripts\scr_obj_Bmusic_left_pres.gml</script>
-        <script>scripts\scr_obj_Bmusic_create.gml</script>
-      </scripts>
-      <scripts name="obj_Bexit">
-        <script>scripts\scr_obj_Bexit_left_press.gml</script>
-      </scripts>
-      <scripts name="obj_cam">
-        <script>scripts\scr_obj_cam_create.gml</script>
-        <script>scripts\scr_obj_cam_step.gml</script>
-      </scripts>
-      <scripts name="obj_floor">
-        <script>scripts\obj_floor_create.gml</script>
+      <scripts name="GUI Interectables">
+        <scripts name="obj_Bstart">
+          <script>scripts\scr_obj_Bstart_step.gml</script>
+        </scripts>
+        <scripts name="obj_Bmusic">
+          <script>scripts\scr_obj_Bmusic_left_pres.gml</script>
+          <script>scripts\scr_obj_Bmusic_create.gml</script>
+        </scripts>
+        <scripts name="obj_Bexit">
+          <script>scripts\scr_obj_Bexit_left_press.gml</script>
+        </scripts>
       </scripts>
     </scripts>
     <scripts name="Shader Object Scripts">
@@ -97,11 +109,15 @@
     <scripts name="Self Working Scripts">
       <script>scripts\draw_background_with_scroll.gml</script>
       <script>scripts\scr_autotile.gml</script>
+      <script>scripts\int.gml</script>
+      <script>scripts\_sign.gml</script>
+      <script>scripts\scr_kill_player.gml</script>
     </scripts>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\sh_shockwave_distortion.shader</shader>
     <shader type="GLSLES">shaders\sh_bloom.shader</shader>
+    <shader type="GLSLES">shaders\sh_main.shader</shader>
   </shaders>
   <objects name="objects">
     <objects name="Invisible Helpers">
@@ -115,6 +131,8 @@
       <object>objects\obj_floor</object>
       <object>objects\obj_props</object>
       <object>objects\obj_room</object>
+      <object>objects\obj_spring</object>
+      <object>objects\obj_spikes</object>
     </objects>
     <objects name="GUI Interactables">
       <object>objects\obj_Bstart</object>
