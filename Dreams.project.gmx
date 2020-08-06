@@ -20,6 +20,7 @@
       <sprite>sprites\spr_room</sprite>
       <sprite>sprites\spr_spring</sprite>
       <sprite>sprites\spr_spike</sprite>
+      <sprite>sprites\spr_icicle</sprite>
     </sprites>
     <sprites name="GUI Interectables">
       <sprite>sprites\spr_Bstart</sprite>
@@ -84,6 +85,10 @@
           <script>scripts\scr_obj_spring_step.gml</script>
           <script>scripts\scr_obj_spring_create.gml</script>
         </scripts>
+        <scripts name="obj_icicle">
+          <script>scripts\scr_obj_icicle_step.gml</script>
+          <script>scripts\scr_obj_icicle_create.gml</script>
+        </scripts>
       </scripts>
       <scripts name="GUI Interectables">
         <scripts name="obj_Bstart">
@@ -119,7 +124,6 @@
     <shader type="GLSLES">shaders\sh_bloom.shader</shader>
     <shader type="GLSLES">shaders\sh_main.shader</shader>
   </shaders>
-  <fonts name="fonts"/>
   <objects name="objects">
     <objects name="Invisible Helpers">
       <object>objects\obj_cam</object>
@@ -134,6 +138,7 @@
       <object>objects\obj_room</object>
       <object>objects\obj_spring</object>
       <object>objects\obj_spikes</object>
+      <object>objects\obj_icicle</object>
     </objects>
     <objects name="GUI Interactables">
       <object>objects\obj_Bstart</object>
