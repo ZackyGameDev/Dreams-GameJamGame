@@ -132,6 +132,7 @@
     <objects name="Shader Handlers">
       <object>objects\obj_sh_shockwave_distort</object>
     </objects>
+    <object>objects\obj_fade</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
