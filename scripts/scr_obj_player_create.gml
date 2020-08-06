@@ -12,5 +12,5 @@ in_dash = false;
 accel = 0;
 momentum = 0;
 jumped_in_dash = false;
-img_xscale = image_xscale
+img_xscale = image_xscale;
 // some of these variables are later updated

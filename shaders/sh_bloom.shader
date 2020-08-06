@@ -21,6 +21,7 @@ void main() {
 varying vec4 v_vColour;
 uniform float blurSize;
 uniform float intensity;
+uniform float rgb;
 
 void main() {
 
