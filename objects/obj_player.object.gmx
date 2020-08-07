@@ -142,6 +142,32 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_crystal">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>vsp = 0;
+hsp = 0;
+momentum = 0;
+move_towards_point(obj_crystal.x,obj_crystal.y,1);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_room">
       <action>
         <libid>1</libid>

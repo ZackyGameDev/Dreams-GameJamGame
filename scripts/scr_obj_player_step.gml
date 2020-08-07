@@ -12,8 +12,9 @@ var move_dir = k_right - k_left;
 if move_dir == 0  {
     move_dir = round(gamepad_axis_value(0, gp_axislh))
 } 
-accel = clamp(accel + (walksp * move_dir)*0.3, -walksp, walksp);
-
+if(!place_meeting(x,y,obj_crystal)){
+    accel = clamp(accel + (walksp * move_dir)*0.3, -walksp, walksp);
+}
 if not k_dash and k_jump and floor_below {
 
     vsp = 0;
@@ -37,7 +38,7 @@ if not k_dash and k_jump and floor_below {
 
 }
 
-if (momentum == 0 or jumped_in_dash) vsp += grv; else if !(jumped_in_dash) self.vsp = 0;
+if (momentum == 0 or jumped_in_dash) and (!place_meeting(x,y,obj_crystal)) vsp += grv; else if !(jumped_in_dash) self.vsp = 0;
 if (-0.15 < momentum && momentum < 0.15) momentum = 0; else momentum -= 0.15 * sign(momentum); // momentum worked in kinda funny way so friction is hard coded here
 if (accel != 0) accel -= _friction * sign(accel);
 if !(-0.5 < accel && accel < 0.5) hsp = int(momentum) + int(accel); else hsp = int(momentum);
@@ -79,7 +80,6 @@ if place_meeting(x, y+vsp, obj_floor){
 
 yprev = y;
 y += vsp;
-
 // I have currently yeeted Animation code since the sprites aren't ready yet
 /*
 if floor_below {
@@ -96,5 +96,3 @@ if floor_below {
     }
 }
 */// I should really get the sprites drawn but drawing with mouse is   t o r t u r e
-
-
