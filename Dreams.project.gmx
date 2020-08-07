@@ -13,6 +13,8 @@
     </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_player_idle</sprite>
+      <sprite>sprites\spr_player_run</sprite>
+      <sprite>sprites\spr_player_jump</sprite>
       <sprite>sprites\spr_player_collision_mask</sprite>
     </sprites>
     <sprites name="Map TIle Markers">
@@ -158,6 +160,7 @@
   <rooms name="rooms">
     <room>rooms\rm_start</room>
     <room>rooms\rm_test</room>
+    <room>rooms\rm_one</room>
     <room>rooms\rm_test_room</room>
   </rooms>
   <help>

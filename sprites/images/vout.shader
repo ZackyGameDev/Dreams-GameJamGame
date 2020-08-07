@@ -169,7 +169,8 @@ struct VS_INPUT
 struct VS_OUTPUT
 {
     float4 gl_Position : POSITION;
-    float2 v0 : TEXCOORD0;
+    float4 v0 : TEXCOORD0;
+    float2 v1 : TEXCOORD1;
 };
 
 VS_OUTPUT main(VS_INPUT input)
@@ -185,7 +186,8 @@ VS_OUTPUT main(VS_INPUT input)
     output.gl_Position.y = gl_Position.y;
     output.gl_Position.z = gl_Position.z;
     output.gl_Position.w = gl_Position.w;
-    output.v0 = _v_vTexcoord;
+    output.v0 = _v_vColour;
+    output.v1 = _v_vTexcoord;
 
     return output;
 }

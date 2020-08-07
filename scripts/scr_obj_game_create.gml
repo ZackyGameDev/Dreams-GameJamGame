@@ -1,6 +1,11 @@
 window_set_caption('Dreams')
 self.depth = 100;
 
+if !instance_exists(obj_cam)
+{
+    instance_create(x, y, obj_cam);
+}
+
 ////////////////////////////////////////////////////////////////////////////
 // Creating the obj_foor tiles on the room borders because i am too lazy to do it by hand
 if room != rm_start {
