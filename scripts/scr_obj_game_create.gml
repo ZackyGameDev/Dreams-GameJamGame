@@ -8,6 +8,7 @@ if (!instance_exists(obj_cam)){
     instance_create(0,0,obj_cam);
 }
 if (!instance_exists(obj_fade)){
+    obj_fade.check = 0;
     instance_create(0,0,obj_fade);
 }
 ////////////////////////////////////////////////////////////////////////////

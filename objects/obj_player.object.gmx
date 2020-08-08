@@ -196,6 +196,48 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_room">
+      <action>
+        <libid>1</libid>
+        <id>601</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_execute_script</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>9</kind>
+            <script>scr_obj_player_collide_obj_room</script>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_crystal">
       <action>
         <libid>1</libid>
@@ -263,48 +305,6 @@ room_speed= 30; // Slowness II (XX:XX)
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_room">
-      <action>
-        <libid>1</libid>
-        <id>601</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_execute_script</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>9</kind>
-            <script>scr_obj_player_collide_obj_room</script>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string></string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
@@ -323,8 +323,8 @@ room_speed= 30; // Slowness II (XX:XX)
           <argument>
             <kind>1</kind>
             <string>
-draw_text_transformed(0, 00, momentum, 2, 2, 0)
-draw_text_transformed(0, 25, accel, 2, 2, 0)
+draw_text_transformed(0, 00, obj_fade.check, 2, 2, 0)
+draw_text_transformed(0, 25, obj_text.strL, 2, 2, 0)
 draw_text_transformed(0, 50, hsp, 2, 2, 0)
 if keyboard_check(ord("W")) {
     draw_text_transformed(view_xview[0], view_yview[0] + 75,  (window_mouse_get_y()-250)/500, 2, 2, 0);
