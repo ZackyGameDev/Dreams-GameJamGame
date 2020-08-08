@@ -143,7 +143,7 @@
       <object>objects\obj_game</object>
       <object>objects\obj_text</object>
       <object>objects\obj_TextS</object>
-      <object>objects\obj_Kcheck</object>
+      <object>objects\obj_player</object>
       <object>objects\obj_fade</object>
     </objects>
     <objects name="Entities">
@@ -151,7 +151,7 @@
     </objects>
     <objects name="Map Tiles">
       <object>objects\obj_floor</object>
-      <object>objects\obj_props</object>
+      <object>objects\obj_crystal</object>
       <object>objects\obj_room</object>
       <object>objects\obj_crystal</object>
       <object>objects\obj_spring</object>
@@ -167,16 +167,16 @@
       <object>objects\obj_sh_shockwave_distort</object>
       <object>objects\ob_particles_handler</object>
       <object>objects\obj_player_dash_pose</object>
-      <object>objects\obj_player_dash_casting</object>
+      <object>objects\obj_crystal_residue</object>
     </objects>
     <object>objects\obj_fadegfhd</object>
     <object>objects\obj_crystal_residue</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
-    <room>rooms\rm_test</room>
     <room>rooms\rm_one</room>
     <room>rooms\rm_test_room</room>
+    <room>rooms\rm_test</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
