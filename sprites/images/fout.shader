@@ -1,8 +1,9 @@
-float2 vec2(float x0, float x1)
+float4 vec4(float x0, float x1, float x2, float x3)
 {
-    return float2(x0, x1);
+    return float4(x0, x1, x2, x3);
 }
 // Varyings
+static float4 _v_vColour = {0, 0, 0, 0};
 static float2 _v_vTexcoord = {0, 0};
 
 static float4 gl_Color[1] =
@@ -11,13 +12,11 @@ static float4 gl_Color[1] =
 };
 
 
-uniform float _blurSize : register(c3);
-uniform float _gm_AlphaRefValue : register(c4);
-uniform bool _gm_AlphaTestEnabled : register(c5);
+uniform float _gm_AlphaRefValue : register(c3);
+uniform bool _gm_AlphaTestEnabled : register(c4);
 uniform sampler2D _gm_BaseTexture : register(s0);
-uniform float4 _gm_FogColour : register(c6);
-uniform bool _gm_PS_FogEnabled : register(c7);
-uniform float _intensity : register(c8);
+uniform float4 _gm_FogColour : register(c5);
+uniform bool _gm_PS_FogEnabled : register(c6);
 
 float4 gl_texture2D(sampler2D s, float2 t)
 {
@@ -68,39 +67,18 @@ if(_gm_PS_FogEnabled)
 ;
 ;
 ;
-;
-;
 void gl_main()
 {
 {
-float4 _sum = float4(0.0, 0.0, 0.0, 0.0);
-int _j = {0};
-int _i = {0};
-(_sum += (gl_texture2D(_gm_BaseTexture, vec2((_v_vTexcoord.x - (4.0 * _blurSize)), _v_vTexcoord.y)) * 0.050000001));
-(_sum += (gl_texture2D(_gm_BaseTexture, vec2((_v_vTexcoord.x - (3.0 * _blurSize)), _v_vTexcoord.y)) * 0.090000004));
-(_sum += (gl_texture2D(_gm_BaseTexture, vec2((_v_vTexcoord.x - (2.0 * _blurSize)), _v_vTexcoord.y)) * 0.12));
-(_sum += (gl_texture2D(_gm_BaseTexture, vec2((_v_vTexcoord.x - _blurSize), _v_vTexcoord.y)) * 0.15000001));
-(_sum += (gl_texture2D(_gm_BaseTexture, vec2(_v_vTexcoord.x, _v_vTexcoord.y)) * 0.16));
-(_sum += (gl_texture2D(_gm_BaseTexture, vec2((_v_vTexcoord.x + _blurSize), _v_vTexcoord.y)) * 0.15000001));
-(_sum += (gl_texture2D(_gm_BaseTexture, vec2((_v_vTexcoord.x + (2.0 * _blurSize)), _v_vTexcoord.y)) * 0.12));
-(_sum += (gl_texture2D(_gm_BaseTexture, vec2((_v_vTexcoord.x + (3.0 * _blurSize)), _v_vTexcoord.y)) * 0.090000004));
-(_sum += (gl_texture2D(_gm_BaseTexture, vec2((_v_vTexcoord.x + (4.0 * _blurSize)), _v_vTexcoord.y)) * 0.050000001));
-(_sum += (gl_texture2D(_gm_BaseTexture, vec2(_v_vTexcoord.x, (_v_vTexcoord.y - (4.0 * _blurSize)))) * 0.050000001));
-(_sum += (gl_texture2D(_gm_BaseTexture, vec2(_v_vTexcoord.x, (_v_vTexcoord.y - (3.0 * _blurSize)))) * 0.090000004));
-(_sum += (gl_texture2D(_gm_BaseTexture, vec2(_v_vTexcoord.x, (_v_vTexcoord.y - (2.0 * _blurSize)))) * 0.12));
-(_sum += (gl_texture2D(_gm_BaseTexture, vec2(_v_vTexcoord.x, (_v_vTexcoord.y - _blurSize))) * 0.15000001));
-(_sum += (gl_texture2D(_gm_BaseTexture, vec2(_v_vTexcoord.x, _v_vTexcoord.y)) * 0.16));
-(_sum += (gl_texture2D(_gm_BaseTexture, vec2(_v_vTexcoord.x, (_v_vTexcoord.y + _blurSize))) * 0.15000001));
-(_sum += (gl_texture2D(_gm_BaseTexture, vec2(_v_vTexcoord.x, (_v_vTexcoord.y + (2.0 * _blurSize)))) * 0.12));
-(_sum += (gl_texture2D(_gm_BaseTexture, vec2(_v_vTexcoord.x, (_v_vTexcoord.y + (3.0 * _blurSize)))) * 0.090000004));
-(_sum += (gl_texture2D(_gm_BaseTexture, vec2(_v_vTexcoord.x, (_v_vTexcoord.y + (4.0 * _blurSize)))) * 0.050000001));
-(gl_Color[0] = ((_sum * _intensity) + gl_texture2D(_gm_BaseTexture, _v_vTexcoord)));
+(gl_Color[0] = (_v_vColour * gl_texture2D(_gm_BaseTexture, _v_vTexcoord)));
+(gl_Color[0] = vec4(gl_Color[0].x, gl_Color[0].y, gl_Color[0].z, 0.89999998));
 }
 }
 ;
 struct PS_INPUT
 {
-    float2 v0 : TEXCOORD0;
+    float4 v0 : TEXCOORD0;
+    float2 v1 : TEXCOORD1;
 };
 
 struct PS_OUTPUT
@@ -110,7 +88,8 @@ struct PS_OUTPUT
 
 PS_OUTPUT main(PS_INPUT input)
 {
-    _v_vTexcoord = input.v0.xy;
+    _v_vColour = input.v0;
+    _v_vTexcoord = input.v1.xy;
 
     gl_main();
 

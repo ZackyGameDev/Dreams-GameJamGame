@@ -1,6 +1,5 @@
 // All the magic is in the magic is in the Fragment Shader
-// Simple passthrough vertex shader
-//
+
 attribute vec3 in_Position;                  // (x,y,z)
 attribute vec4 in_Colour;                    // (r,g,b,a)
 attribute vec2 in_TextureCoord;              // (u,v)

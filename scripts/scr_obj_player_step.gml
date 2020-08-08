@@ -17,7 +17,6 @@ if(!place_meeting(x,y,obj_crystal)){
 }
 if not k_dash and k_jump and floor_below {
 
-    vsp = 0;
     vsp = -jumpsp;
     just_jumped = true; // `just_jumped` is later used in squish squash section (currently removed)
 
@@ -26,16 +25,24 @@ if not k_dash and k_jump and floor_below {
         self.momentum += dash_sp * sign(img_xscale) * 0.35 // Hyper Dash
         alarm[0] = 20;
         jumped_in_dash = true;
+        instance_create(x, y, obj_player_dash_casting);
 
     }
-    
+
+// The Dash
 } else if k_dash {
     
     self.in_dash = true;
     dash_sp = walksp*1.7;
     alarm[0] = 40;
-    momentum = (dash_sp*sign(img_xscale))*1.25;
+    alarm[1] = 0;
+    momentum = dash_sp*sign(img_xscale);
+    instance_create(x, y, obj_player_dash_casting);
 
+}
+
+if momentum != 0 {
+    if alarm[1] < 0 alarm[1] = 5;
 }
 
 if (momentum == 0 or jumped_in_dash) and (!place_meeting(x,y,obj_crystal)) vsp += grv; else if !(jumped_in_dash) self.vsp = 0;
@@ -81,18 +88,20 @@ if place_meeting(x, y+vsp, obj_floor){
 yprev = y;
 y += vsp;
 // I have currently yeeted Animation code since the sprites aren't ready yet
-/*
+
 if floor_below {
    if self.hsp == 0 {
+        image_speed = 0.1;
         sprite_index = spr_player_idle;
    } else {
+        image_speed = 0.1;
         self.sprite_index = spr_player_run;
    }
 } else {
-    if self.vsp < 0 {
-        self.sprite_index = spr_player_jump;
-    } else {
-        self.sprite_index = spr_player_fall;
-    }
+    sprite_index = spr_player_jump;
+    if (self.vsp < 0) image_index = 0; else image_index = 1;
 }
-*/// I should really get the sprites drawn but drawing with mouse is   t o r t u r e
+// I should really get the sprites drawn but drawing with mouse is   t o r t u r e
+// Update: I got the sprites done and yes, drawing with mouse is, in fact,  t o r t u r e
+
+
