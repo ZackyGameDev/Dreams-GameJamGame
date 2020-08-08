@@ -144,6 +144,7 @@
       <object>objects\obj_text</object>
       <object>objects\obj_TextS</object>
       <object>objects\obj_Kcheck</object>
+      <object>objects\obj_fade</object>
     </objects>
     <objects name="Entities">
       <object>objects\obj_player</object>
@@ -168,7 +169,6 @@
       <object>objects\obj_player_dash_pose</object>
       <object>objects\obj_player_dash_casting</object>
     </objects>
-    <object>objects\obj_fade</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
