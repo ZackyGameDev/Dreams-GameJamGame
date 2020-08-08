@@ -16,6 +16,7 @@
       <sprite>sprites\spr_player_run</sprite>
       <sprite>sprites\spr_player_jump</sprite>
       <sprite>sprites\spr_player_collision_mask</sprite>
+      <sprite>sprites\spr_player_sit</sprite>
     </sprites>
     <sprites name="Map TIle Markers">
       <sprite>sprites\spr_wall</sprite>

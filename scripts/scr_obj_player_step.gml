@@ -7,6 +7,16 @@ k_dash = (keyboard_check_pressed(vk_lshift) || (k_down && k_jump) || gamepad_but
 floor_below = place_meeting(x, y+1, obj_floor);
 just_jumped = false;
 
+if sprite_index = spr_player_sit 
+{
+    if k_jump sprite_index = spr_player_jump;
+}
+
+if sprite_index = spr_player_sit 
+{
+    return noone; // alternate to saying `return void;`
+}
+
 // Movement Calculation
 var move_dir = k_right - k_left;
 if move_dir == 0  {
@@ -91,7 +101,7 @@ y += vsp;
 
 if floor_below {
    if self.hsp == 0 {
-        image_speed = 0.1;
+        image_speed = 0.075;
         sprite_index = spr_player_idle;
    } else {
         image_speed = 0.1;
