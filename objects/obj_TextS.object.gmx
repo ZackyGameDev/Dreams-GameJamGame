@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>num = 0;
+check = 0;
 </string>
           </argument>
         </arguments>
@@ -48,7 +49,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_position( obj_player.x, obj_player.y, obj_crystal ) &amp;&amp; obj_game.Dlimit == 1){
+            <string>if (check == 1 &amp;&amp; obj_game.Dlimit == 1){
  var str;
  switch (num)
  {

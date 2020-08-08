@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>a = 0;
+active = 0;
 fade = 1;
 check = 0;
 </string>
@@ -50,7 +51,7 @@ check = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (check == 1){
+            <string>if (active == 1){
     a = clamp(a + (fade * 0.05), 0, 1)
     
     if (a == 1)
@@ -74,6 +75,7 @@ check = 0;
         0
     )
     draw_set_alpha(1);
+    obj_TextS.check = 1;
 }
 </string>
           </argument>
