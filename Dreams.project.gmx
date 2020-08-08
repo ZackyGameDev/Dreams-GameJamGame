@@ -171,9 +171,9 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
-    <room>rooms\rm_test</room>
     <room>rooms\rm_one</room>
     <room>rooms\rm_test_room</room>
+    <room>rooms\rm_test</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
