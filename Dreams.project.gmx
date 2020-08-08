@@ -132,7 +132,7 @@
     </objects>
     <objects name="Shader Handlers">
       <object>objects\obj_sh_shockwave_distort</object>
-      <object>objects\obj_Button_Burst</object>
+      <object>objects\ob_particles_handler</object>
     </objects>
     <object>objects\obj_fade</object>
   </objects>
