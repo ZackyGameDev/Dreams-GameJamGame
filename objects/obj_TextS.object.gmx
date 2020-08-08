@@ -75,7 +75,10 @@ Never gonna make you cry
 Never gonna say goodbye";break;
   default: str = "Something went wrong!";break;
  }
- scr_text(str,1,view_wview[0], view_hview[0]);
+ str1 = "
+Press enter to continue";
+ scr_text(str+str1,1,view_wview[0], view_hview[0]);
+ obj_text.strL = string_length(str);
  num += 1;
  obj_game.Dlimit = 0;
 }

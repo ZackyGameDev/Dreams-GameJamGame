@@ -1,4 +1,3 @@
-random_set_seed(room);
 grv = 0.2;
 vsp = 0.00;
 hsp = 0.00;
@@ -14,5 +13,13 @@ accel = 0;
 momentum = 0;
 jumped_in_dash = false;
 img_xscale = image_xscale;
-sprite_index = spr_player_sit;
 // some of these variables are later updated
+
+if (room == rm_test) {
+    sprite_index = spr_player_sit;
+    image_speed = 0;
+}
+else {
+    sprite_index = spr_player_idle;
+    image_speed = 0;
+}
