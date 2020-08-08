@@ -234,9 +234,9 @@ with obj_crystal {
     part_type_scale(explode, 0.25, 0.25);                               //Set the scale to 0.5:1 for the x/y scale of the sprite used in the particle
     part_type_color3(explode, 4227327, 8454143, 4210688);               //Set the color using the absolute color value (this is orange, yellow, then dark green)
     part_type_alpha3(explode, 0, 1, 0);                                    //Two alpha values, fade from opaque to transparent
-    part_type_speed(explode, 0, 0, 0, 0.5);                          //Set a random speed form 5 to 10 steps per second, make it slow down by 0.02 steps per second and give it a "wiggle" of 5
+    part_type_speed(explode, 0.1, 0.25, 0, 0.5);                          //Set a random speed form 5 to 10 steps per second, make it slow down by 0.02 steps per second and give it a "wiggle" of 5
     part_type_direction(explode, 45, 135, 0, 10);                       //Set the random movemnt to between 45º and 135º, limiting the particles to be emitted upwards
-    part_type_gravity(explode, 0, 270);                              //Set the gravity to pull the particles down
+    part_type_gravity(explode, 0.01, 270);                              //Set the gravity to pull the particles down
     part_type_orientation(explode, 0, 359, 0, 0, 0);                    //random orientacion (image angle)
     part_type_blend(explode,1);                                         //Additive blending to make them "glow"
     //part_type_life(explode, 60, 120);                                   //long life between 60 and 120 steps
