@@ -256,8 +256,7 @@ with obj_crystal {
     instance_destroy()
 }
 
-
-room_speed= 30; // Slowness II (XX:XX)
+room_speed = clamp(room_speed-1, 30, 60) // Slowness II (XX:XX)
 </string>
           </argument>
         </arguments>
