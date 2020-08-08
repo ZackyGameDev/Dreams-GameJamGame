@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>fade =1;
+            <string>a = 0;
+fade = 1;
 </string>
           </argument>
         </arguments>
@@ -74,9 +75,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !instance_exists(obj_crystal) {
-    if alarm[0] &lt;= -1 {
-        self.alarm[0] = 15;
+            <string>if (instance_position(obj_player.x,obj_player.y, obj_crystal)){
+    a = clamp(a + (fade * 0.05), 0, 1)
+    
+    if (a == 1)
+    {
+        room_goto_next();
+        fade = -1;
+    }
+    
+    if (a == 0) &amp;&amp; (fade == -1)
+    {
+        instance_destroy();
     }
 } else if fade &gt; 0 {
     fade -= 0.01;
