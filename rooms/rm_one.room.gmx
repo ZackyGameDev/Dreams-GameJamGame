@@ -1355,7 +1355,6 @@
     <instance objName="obj_icicle" x="288" y="8" name="inst_4B3FDBAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_icicle" x="352" y="8" name="inst_D5505AD7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_icicle" x="488" y="8" name="inst_E05B18C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_crystal" x="400" y="64" name="inst_9C7542B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

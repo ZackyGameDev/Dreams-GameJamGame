@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>strL = 0;
- alpha = 0;
+            <string>alpha = 0;
  print = "";
  time = 0;
  depth = depth - instance_number(obj_text);
@@ -99,11 +98,6 @@ draw_set_alpha(1);
 if (time &lt; text_length){
  time +=spd;
  print = string_copy(text,0,time);
- strL -= 1;
-}
-
-if (strL &lt;= 0){
-    instance_create(0,0,obj_Kcheck);
 }
 </string>
           </argument>
