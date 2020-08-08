@@ -169,15 +169,12 @@
       <object>objects\obj_player_dash_pose</object>
       <object>objects\obj_player_dash_casting</object>
     </objects>
-    <objects name="Decorations">
-      <object>objects\obj_fade</object>
-      <object>objects\obj_crystal_residue</object>
-    </objects>
+    <object>objects\obj_fadegfhd</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
-    <room>rooms\rm_one</room>
     <room>rooms\rm_test</room>
+    <room>rooms\rm_one</room>
     <room>rooms\rm_test_room</room>
   </rooms>
   <help>
