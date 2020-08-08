@@ -358,7 +358,7 @@
     <instance objName="obj_floor" x="640" y="88" name="inst_74EA0392" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room" x="168" y="88" name="inst_85E457BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room" x="488" y="168" name="inst_90392E49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="112" y="144" name="inst_8A60291C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="88" y="152" name="inst_8A60291C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="112" y="168" name="inst_9E0D6486" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="120" y="168" name="inst_ADFE1951" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="128" y="168" name="inst_7AF0AD78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

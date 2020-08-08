@@ -332,7 +332,8 @@ if keyboard_check(ord("W")) {
     draw_text_transformed(0, 75,  (window_mouse_get_y()-250)/150, 2, 2, 0);
     draw_text_transformed(0, 100, (window_mouse_get_x()-250)/300, 2, 2, 0);
 }
-
+draw_text_transformed(0, 125, img_xscale, 2, 2, 0);
+draw_text_transformed(0, 150, img_xscale, 2, 2, 0);
 </string>
           </argument>
         </arguments>

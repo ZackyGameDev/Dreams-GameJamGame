@@ -1,3 +1,5 @@
+random_set_seed(room);
+
 window_set_caption('Dreams')
 self.depth = 100;
 Dlimit = 1;

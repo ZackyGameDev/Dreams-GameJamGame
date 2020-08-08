@@ -13,6 +13,8 @@ accel = 0;
 momentum = 0;
 jumped_in_dash = false;
 img_xscale = image_xscale;
+img_yscale = image_yscale;
+anime_dir = 1;
 // some of these variables are later updated
 
 if (room == rm_test) {
