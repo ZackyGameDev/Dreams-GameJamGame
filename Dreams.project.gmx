@@ -170,6 +170,7 @@
       <object>objects\obj_crystal_residue</object>
     </objects>
     <object>objects\obj_fadegfhd</object>
+    <object>objects\obj_crystal_residue</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
