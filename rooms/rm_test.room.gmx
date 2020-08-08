@@ -1173,6 +1173,7 @@
     <instance objName="obj_room" x="448" y="416" name="inst_36F3C7F7" locked="0" code="" scaleX="0.925000011920929" scaleY="0.677777767181396" colour="4294967295" rotation="0"/>
     <instance objName="obj_room" x="760" y="416" name="inst_FFB11B73" locked="0" code="" scaleX="0.925000011920929" scaleY="0.677777767181396" colour="4294967295" rotation="0"/>
     <instance objName="obj_crystal" x="400" y="80" name="inst_8F273573" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Button_Burst" x="184" y="80" name="inst_60DCF01B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
