@@ -32,6 +32,7 @@ random_set_seed(room);
 window_set_caption('Dreams')
 self.depth = 100;
 Dlimit = 1;
+PLcCR = 0;
 if (!instance_exists(obj_TextS)){
         instance_create(0,0,obj_TextS);
 }
@@ -45,7 +46,7 @@ if (!instance_exists(obj_fade)){
 
 ////////////////////////////////////////////////////////////////////////////
 // Creating the obj_foor tiles on the room borders because i am too lazy to do it by hand
-if room != rm_start {
+if room != rm_start && room != rm_D1 && room != rm_D2 {
     var rw, rh, i;
 
     rw = room_width;

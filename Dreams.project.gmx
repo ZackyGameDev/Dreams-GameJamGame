@@ -30,6 +30,7 @@
       <sprite>sprites\spr_Bstart_bg</sprite>
       <sprite>sprites\spr_Bmusic</sprite>
       <sprite>sprites\spr_Bexit</sprite>
+      <sprite>sprites\spr_PETC</sprite>
     </sprites>
     <sprites name="Shader Dependencies">
       <sprites name="Normal Maps">
@@ -168,6 +169,7 @@
     <objects name="GUI Interactables">
       <object>objects\obj_Bstart</object>
       <object>objects\obj_Bmusic</object>
+      <object>objects\obj_PETC</object>
       <object>objects\obj_Bexit</object>
       <object>objects\obj_buttonbg1</object>
       <object>objects\obj_buttonbg2</object>
@@ -188,6 +190,9 @@
   <rooms name="rooms">
     <room>rooms\rm_start</room>
     <room>rooms\rm_one</room>
+    <room>rooms\rm_D1</room>
+    <room>rooms\rm_test</room>
+    <room>rooms\rm_D2</room>
     <room>rooms\rm_test_room</room>
     <room>rooms\rm_test</room>
   </rooms>
