@@ -163,6 +163,7 @@
       <object>objects\obj_spring</object>
       <object>objects\obj_spikes</object>
       <object>objects\obj_icicle</object>
+      <object>objects\obj_props</object>
     </objects>
     <objects name="GUI Interactables">
       <object>objects\obj_Bstart</object>
