@@ -38,6 +38,8 @@ image_xscale += hsp;
 y -= 0.5;
 if y &lt; 0 instance_destroy();
 
+room_speed = clamp(room_speed-1, 30, 60)
+
 draw_self()
 </string>
           </argument>

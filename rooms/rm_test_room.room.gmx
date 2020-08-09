@@ -8,7 +8,7 @@
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
-  <colour>12632256</colour>
+  <colour>4194304</colour>
   <showcolour>0</showcolour>
   <code></code>
   <enableViews>-1</enableViews>
@@ -1217,6 +1217,7 @@
     <instance objName="obj_room" x="161" y="268" name="inst_9DECACA0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room" x="480" y="88" name="inst_A033264B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room" x="479" y="267" name="inst_7543FA7A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_true_fade" x="96" y="152" name="inst_06166180" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

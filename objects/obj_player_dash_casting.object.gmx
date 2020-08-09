@@ -65,8 +65,8 @@ shader_set_uniform_f (green, 1.0);
 shader_set_uniform_f (blue, 0.5);
 
 image_alpha -= 0.05;
-draw_sprite_ext(obj_player.sprite_index, obj_player.image_index, 8, 8,
-                                          obj_player.image_xscale, obj_player.image_yscale, 0,
+draw_sprite_ext(obj_player.sprite_index, obj_player.image_index, 8, 16,
+                                          obj_player.img_xscale, obj_player.img_yscale, 0,
                                           c_white, 1);
 
 bloomIntensity = shader_get_uniform(sh_bloom, "intensity");
@@ -81,7 +81,7 @@ draw_surface(surf, 0, 0);
 shader_set(sh_main);
 surface_reset_target();
 draw_set_alpha(image_alpha);
-draw_surface(surf, obj_player.x-8, obj_player.y-8);
+draw_surface(surf, obj_player.x-8, obj_player.y-16);
 draw_set_alpha(1);
 surface_free(surf);
 

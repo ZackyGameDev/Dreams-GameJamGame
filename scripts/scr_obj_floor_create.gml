@@ -3,7 +3,7 @@
 image_speed = 0;
 
 switch room {
-    case rm_test:
+    case rm_one:
         sprite_index = spr_tileset_stage1_1;
         spr_props = spr_props_stage1_1;
     break;

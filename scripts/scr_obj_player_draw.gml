@@ -16,4 +16,4 @@
 // to the game now. Like seriously, what should I?
 // man here i go again
 
-draw_sprite_ext(sprite_index, image_index, x, y, round(img_xscale), image_yscale, image_angle, c_white, image_alpha);
+draw_sprite_ext(sprite_index, image_index, x, y, img_xscale, img_yscale, image_angle, c_white, image_alpha);
