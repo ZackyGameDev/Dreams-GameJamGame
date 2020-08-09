@@ -51,12 +51,12 @@ image_alpha = 1;
           <argument>
             <kind>1</kind>
             <string>draw_set_alpha(image_alpha);
-draw_rectangle_color(0, 0, room_width, room_height, c_black, c_black, c_black, c_black, false);
+draw_rectangle_color(view_xview[0], view_yview[0], view_wview[0], view_hview[0], c_black, c_black, c_black, c_black, false);
 draw_set_alpha(1);
 if fadein {
     image_alpha -= 0.05;
 } else {
-    image_alpha += 0.01;
+    image_alpha += 0.05;
     if image_alpha &gt;= 1 room_goto_next();
 }
 </string>

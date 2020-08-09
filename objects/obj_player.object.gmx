@@ -323,7 +323,6 @@ room_speed = clamp(room_speed-1, 30, 60) // Slowness II (XX:XX)
             <kind>1</kind>
             <string>
 draw_text_transformed(0, 00, obj_fade.check, 2, 2, 0)
-draw_text_transformed(0, 25, obj_text.strL, 2, 2, 0)
 draw_text_transformed(0, 50, hsp, 2, 2, 0)
 if keyboard_check(ord("W")) {
     draw_text_transformed(view_xview[0], view_yview[0] + 75,  (window_mouse_get_y()-250)/500, 2, 2, 0);
