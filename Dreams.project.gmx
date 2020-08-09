@@ -109,6 +109,10 @@
           <script>scripts\scr_obj_Bexit_left_press.gml</script>
         </scripts>
       </scripts>
+      <scripts name="Shader Using people">
+        <script>scripts\scr_obj_flare_handler_create.gml</script>
+        <script>scripts\scr_obj_flare_handler_draw_gui.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Shader Object Scripts">
       <scripts name="Shockwave Distortion">
@@ -168,6 +172,7 @@
       <object>objects\ob_particles_handler</object>
       <object>objects\obj_player_dash_pose</object>
       <object>objects\obj_player_dash_casting</object>
+      <object>objects\obj_flare_handler</object>
     </objects>
     <object>objects\obj_fadegfhd</object>
     <object>objects\obj_crystal_residue</object>

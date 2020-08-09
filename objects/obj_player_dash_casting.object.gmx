@@ -66,7 +66,7 @@ shader_set_uniform_f (blue, 0.5);
 
 image_alpha -= 0.05;
 draw_sprite_ext(obj_player.sprite_index, obj_player.image_index, 8, 16,
-                                          obj_player.image_xscale, obj_player.image_yscale, 0,
+                                          obj_player.img_xscale, obj_player.img_yscale, 0,
                                           c_white, 1);
 
 bloomIntensity = shader_get_uniform(sh_bloom, "intensity");

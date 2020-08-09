@@ -36,15 +36,15 @@ Sname = part_system_create();
 //Create the particle type
 explode = part_type_create();                               
 part_type_shape(explode, pt_shape_flare);                           //Choose a "flare" shape for the particle
-part_type_size(explode,25, 50, 0, 1);                        //Set the size between 50% and 150%, make it grow at 2% per step and give it "wiggle"
+part_type_size(explode,10, 25, 0, 1);                        //Set the size between 50% and 150%, make it grow at 2% per step and give it "wiggle"
 part_type_scale(explode, 0.25, 0.25);                               //Set the scale to 0.5:1 for the x/y scale of the sprite used in the particle
 part_type_color3(explode, 4227327, 8454143, 4210688);               //Set the color using the absolute color value (this is orange, yellow, then dark green)
-part_type_alpha3(explode, 0, 0.5, 0);                                    //Two alpha values, fade from opaque to transparent
-part_type_speed(explode, 0.5, 0.1, 0, 0.5);                          //Set a random speed form 5 to 10 steps per second, make it slow down by 0.02 steps per second and give it a "wiggle" of 5
+part_type_alpha3(explode, 0, 0.25, 0);                                    //Two alpha values, fade from opaque to transparent
+part_type_speed(explode, 0, 0, 0, 0);                          //Set a random speed form 5 to 10 steps per second, make it slow down by 0.02 steps per second and give it a "wiggle" of 5
 part_type_direction(explode, 45, 135, 0, 10);                       //Set the random movemnt to between 45º and 135º, limiting the particles to be emitted upwards
 part_type_gravity(explode, 0.01, 270);                              //Set the gravity to pull the particles down
 part_type_orientation(explode, 0, 359, 0, 0, 0);                    //random orientacion (image angle)
-part_type_blend(explode,1);                                         //Additive blending to make them "glow"
+part_type_blend(explode,0.1);                                         //Additive blending to make them "glow"
 part_type_life(explode, 60, 120);                                   //long life between 60 and 120 steps
 
 //Create the emitter
@@ -58,7 +58,8 @@ posy = obj_crystal.y
 //Now to set the emitter position and distribution
 part_emitter_region(Sname, emitter1, posx - 64, posx + 64, posy - 32, posy + 32, ps_shape_ellipse, ps_distr_gaussian);
 //Finally, burst the particles from the emitter
-part_emitter_burst(Sname, emitter1, explode, 100);
+part_emitter_burst(Sname, emitter1, explode, 1);
+
 </string>
           </argument>
         </arguments>
@@ -107,37 +108,27 @@ image_index = 0;
           <argument>
             <kind>1</kind>
             <string>//Collision check with mouse
-if instance_position(mouse_x, mouse_y, id)
+if not random_range(0, 200) 
 {
-//See if button has been pressed
-if image_index != 2
-    {
-    //It hasn't, so change to "hover" state
-    image_index = 1;
-    //Check for press
-    if mouse_check_button_pressed(mb_left)
-        {
-        //Change to "pressed" state, and run an alarm to reset to "normal" state
-        alarm[0] = room_speed / 2;
-        image_index = 2;
-        //Create fireworks!!!
-        //We must define the emitter position within the room, so we will set it to the position of the crystal shard thingy.
-        var posx, posy;
-        posx = obj_crystal.x;
-        posy = obj_crystal.y
-        //Now to set the emitter position and distribution
-        part_emitter_region(Sname, emitter1, posx - 64, posx + 64, posy - 32, posy + 32, ps_shape_ellipse, ps_distr_gaussian);
-        //Finally, burst the particles from the emitter
-        part_emitter_burst(Sname, emitter1, explode, 100);
-        }
-    }
+    //Change to "pressed" state, and run an alarm to reset to "normal" state
+    alarm[0] = room_speed / 2;
+    image_index = 2;
+    //Create fireworks!!!
+    //We must define the emitter position within the room, so we will set it to the position of the crystal shard thingy.
+    var posx, posy;
+    posx = obj_crystal.x;
+    posy = obj_crystal.y
+    //Now to set the emitter position and distribution
+    part_emitter_region(Sname, emitter1, posx - 64, posx + 64, posy - 32, posy + 32, ps_shape_ellipse, ps_distr_gaussian);
+    //Finally, burst the particles from the emitter
+    part_emitter_burst(Sname, emitter1, explode, 100);
 }
 else
 {
-//Not pressed and no mouse over, so set to "normal" button state
-if image_index != 2
+    //Not pressed and no mouse over, so set to "normal" button state
+    if image_index != 2
     {
-    image_index =0;
+        image_index =0;
     }
 }
 </string>
