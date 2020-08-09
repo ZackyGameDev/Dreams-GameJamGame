@@ -68,7 +68,7 @@ draw_set_valign(fa_top);
 
 draw_text_ext(
  x + padding,
- y + padding,
+ room_height/2+25,
  print,
  font_size+(font_size/2),
  maxlength
@@ -103,7 +103,7 @@ if (time &lt; text_length){
 }
 
 if (strL &lt;= 0){
-    instance_create(0,0,obj_Kcheck);
+    instance_create(35, 100,obj_PETC);
 }
 </string>
           </argument>

@@ -29,6 +29,7 @@
       <sprite>sprites\spr_Bstart</sprite>
       <sprite>sprites\spr_Bmusic</sprite>
       <sprite>sprites\spr_Bexit</sprite>
+      <sprite>sprites\spr_PETC</sprite>
     </sprites>
     <sprites name="Shader Dependencies">
       <sprites name="Normal Maps">
@@ -143,7 +144,6 @@
       <object>objects\obj_game</object>
       <object>objects\obj_text</object>
       <object>objects\obj_TextS</object>
-      <object>objects\obj_Kcheck</object>
       <object>objects\obj_fade</object>
     </objects>
     <objects name="Entities">
@@ -161,6 +161,7 @@
     <objects name="GUI Interactables">
       <object>objects\obj_Bstart</object>
       <object>objects\obj_Bmusic</object>
+      <object>objects\obj_PETC</object>
       <object>objects\obj_Bexit</object>
     </objects>
     <objects name="Shader Users">
@@ -174,8 +175,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
-    <room>rooms\rm_one</room>
     <room>rooms\rm_D1</room>
+    <room>rooms\rm_one</room>
     <room>rooms\rm_test</room>
     <room>rooms\rm_D2</room>
     <room>rooms\rm_test_room</room>
