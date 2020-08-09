@@ -102,7 +102,7 @@
           <script>scripts\scr_obj_Bstart_step.gml</script>
         </scripts>
         <scripts name="obj_Bmusic">
-          <script>scripts\scr_obj_Bmusic_left_pres.gml</script>
+          <script>scripts\scr_obj_Bmusic_left_pressed.gml</script>
           <script>scripts\scr_obj_Bmusic_create.gml</script>
         </scripts>
         <scripts name="obj_Bexit">
