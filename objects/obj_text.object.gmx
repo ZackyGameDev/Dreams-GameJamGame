@@ -103,7 +103,7 @@ if (time &lt; text_length){
 }
 
 if (strL &lt;= 0){
-    instance_create(35, 100,obj_PETC);
+    instance_create(49,165,obj_PETC);
 }
 </string>
           </argument>
