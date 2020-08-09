@@ -27,6 +27,7 @@
     </sprites>
     <sprites name="GUI Interectables">
       <sprite>sprites\spr_Bstart</sprite>
+      <sprite>sprites\spr_Bstart_bg</sprite>
       <sprite>sprites\spr_Bmusic</sprite>
       <sprite>sprites\spr_Bexit</sprite>
     </sprites>
@@ -62,6 +63,7 @@
       <background>background\bg_clouds1</background>
       <background>background\bg_clouds2</background>
     </backgrounds>
+    <background>background\bg_title_screen</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -108,6 +110,7 @@
         <scripts name="obj_Bexit">
           <script>scripts\scr_obj_Bexit_left_press.gml</script>
         </scripts>
+        <script>scripts\scr_button_draw.gml</script>
       </scripts>
       <scripts name="Shader Using people">
         <script>scripts\scr_obj_flare_handler_create.gml</script>
@@ -140,6 +143,7 @@
   </shaders>
   <fonts name="fonts">
     <font>fonts\fnt</font>
+    <font>fonts\fnt_yoster_island</font>
   </fonts>
   <objects name="objects">
     <objects name="Invisible Helpers">
@@ -166,6 +170,7 @@
       <object>objects\obj_Bstart</object>
       <object>objects\obj_Bmusic</object>
       <object>objects\obj_Bexit</object>
+      <object>objects\obj_buttonbg1</object>
     </objects>
     <objects name="Shader Users">
       <object>objects\obj_sh_shockwave_distort</object>
