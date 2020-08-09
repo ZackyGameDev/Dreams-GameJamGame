@@ -151,7 +151,6 @@
       <object>objects\obj_game</object>
       <object>objects\obj_text</object>
       <object>objects\obj_TextS</object>
-      <object>objects\obj_player</object>
       <object>objects\obj_fade</object>
     </objects>
     <objects name="Entities">
@@ -161,7 +160,6 @@
       <object>objects\obj_floor</object>
       <object>objects\obj_crystal</object>
       <object>objects\obj_room</object>
-      <object>objects\obj_crystal</object>
       <object>objects\obj_spring</object>
       <object>objects\obj_spikes</object>
       <object>objects\obj_icicle</object>
@@ -183,7 +181,6 @@
       <object>objects\obj_flare_handler</object>
     </objects>
     <object>objects\obj_fadegfhd</object>
-    <object>objects\obj_crystal_residue</object>
     <object>objects\obj_bgtitle</object>
     <object>objects\obj_true_fade</object>
   </objects>
