@@ -78,7 +78,7 @@ Never gonna say goodbye";break;
  }
  str1 = "
 Press enter to continue";
- scr_text(str+str1,1, 80, 300);
+ scr_text(str+str1,1, 80, 270);
  obj_text.strL = string_length(str+str1);
  num += 1;
  obj_game.Dlimit = 0;
