@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>obj_fade.check = 1;
+            <string>obj_fade.a = 0;
+obj_fade.fade = 1;
+obj_game.PLcCR = 2;
+
+instance_destroy();
 </string>
           </argument>
         </arguments>

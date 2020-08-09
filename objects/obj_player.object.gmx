@@ -216,7 +216,7 @@
             <string>vsp = 0;
 hsp = 0;
 momentum = 0;
-obj_fade.active = 1;
+obj_game.PLcCR = 1;
 
 with obj_crystal {
     instance_create(x, y, obj_crystal_residue)
