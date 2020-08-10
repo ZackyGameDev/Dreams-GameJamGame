@@ -53,7 +53,11 @@ active = 0;
  var str;
  switch (num)
  {
-  case 0: str = "e";break;
+  case 0: str = "
+  * You don't remember anymore... 
+  * Who was that?
+  * Ever since the incident you can't recall...
+      ...the one whose memories you have lost";break;
   case 1: str = "Never gonna give you up
 Never gonna let you down
 Never gonna run around and desert you

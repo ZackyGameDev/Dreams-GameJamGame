@@ -76,7 +76,8 @@ if keyboard_check_pressed(ord("F")) {
         case false: window_set_fullscreen(true); break;
     }
 }
-
+if keyboard_check_pressed(ord("P")) room_goto_next();
+if keyboard_check_pressed(ord("O")) room_goto_previous();
 </string>
           </argument>
         </arguments>
