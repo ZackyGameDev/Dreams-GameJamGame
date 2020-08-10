@@ -4943,11 +4943,14 @@
     <instance objName="obj_respawn_anchors" x="1304" y="336" name="inst_F9296B89" locked="0" code="" scaleX="1.5" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="obj_respawn_anchors" x="1296" y="472" name="inst_0B70E931" locked="0" code="" scaleX="1.5" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_respawn_anchors" x="1272" y="472" name="inst_3672DB41" locked="0" code="" scaleX="1.5" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="obj_respawn_anchors" x="1045" y="672" name="inst_56B892CB" locked="0" code="" scaleX="7.375" scaleY="2.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn_anchors" x="1072" y="648" name="inst_56B892CB" locked="0" code="" scaleX="0.875" scaleY="8.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_respawn_anchors" x="1248" y="824" name="inst_24B60B9E" locked="0" code="" scaleX="1.5" scaleY="0" colour="4294967295" rotation="0"/>
     <instance objName="obj_respawn_anchors" x="968" y="712" name="inst_E14AFCF1" locked="0" code="" scaleX="1.5" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_respawn_anchors" x="656" y="816" name="inst_75F2B601" locked="0" code="" scaleX="1.5" scaleY="16" colour="4294967295" rotation="0"/>
     <instance objName="obj_respawn_anchors" x="344" y="840" name="inst_FCE8350A" locked="0" code="" scaleX="1.5" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn_anchors" x="896" y="712" name="inst_5A398452" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn_anchors" x="621" y="816" name="inst_E164788A" locked="0" code="" scaleX="1.71428573131561" scaleY="16" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn_anchors" x="304" y="840" name="inst_3D132F55" locked="0" code="" scaleX="1.5" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_true_fade" x="80" y="80" name="inst_7B8BCE9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
