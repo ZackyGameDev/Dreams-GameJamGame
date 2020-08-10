@@ -74,7 +74,16 @@ switch room {
         bg_scroll_amount[0] = 1/14;
         bg_scroll_amount[1] = 1/10;
         bg_scroll_amount[2] =  1/6;
+
+    case rm_two: 
+        backgrounds[0] = bg_clouds0;
+        backgrounds[1] = bg_clouds1;
+        backgrounds[2] = bg_clouds2;
         
+        bg_scroll_amount[0] = 1/14;
+        bg_scroll_amount[1] = 1/10;
+        bg_scroll_amount[2] =  1/6;
+                
     break;
     
     default: backgrounds[0] = noone; break; // I later add a check in the draw event that only draws the background if the variable is not `noone`
