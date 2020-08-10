@@ -5,8 +5,6 @@ if place_meeting(x, y, obj_player)
     obj_player.momentum = 0;
     obj_player.in_dash = false;
     image_speed = 0.5;
-    obj_player.img_yscale = 1.5;
-    obj_player.img_xscale = 0.5;
 }
 
 if image_index = 0 
