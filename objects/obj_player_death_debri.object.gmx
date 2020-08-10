@@ -51,7 +51,7 @@ scale = 2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scale -= 0.01
+            <string>scale -= 0.05;
 dir_change_speed -= 0.05;
 direction += dir_change_speed;
 
