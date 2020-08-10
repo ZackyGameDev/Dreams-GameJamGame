@@ -51,8 +51,8 @@
   </views>
   <instances>
     <instance objName="obj_game" x="0" y="0" name="inst_8922E622" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_credits" x="0" y="176" name="inst_CDFFBCCA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_true_fade" x="144" y="112" name="inst_118DBD05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_credits" x="0" y="0" name="inst_78097753" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_true_fade" x="-8" y="96" name="inst_118DBD05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
