@@ -43,7 +43,7 @@ if (!instance_exists(obj_fade)){
     obj_fade.check = 0;
     instance_create(0,0,obj_fade);
 }
-
+/*
 ////////////////////////////////////////////////////////////////////////////
 // Creating the obj_foor tiles on the room borders because i am too lazy to do it by hand
 if room != rm_start && room != rm_D1 && room != rm_D2 {
@@ -58,7 +58,7 @@ if room != rm_start && room != rm_D1 && room != rm_D2 {
     for(i=0; i<=rw/8; i++) { instance_create(i*8, rh, obj_floor); instance_create(i*8, 0, obj_floor); } // Bottom and top Border
     for(i=0; i<=rh/8; i++) { instance_create(rw, i*8, obj_floor); instance_create(0, i*8, obj_floor); } // Right and left Border
 }
-
+*/
 /////////////////////////////////////////////////////////////////////////////
 // Deciding which background to draw, this is later useful in the draw event
 

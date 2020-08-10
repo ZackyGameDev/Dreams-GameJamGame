@@ -16,12 +16,4 @@ img_xscale = image_xscale;
 img_yscale = image_yscale;
 anime_dir = 1;
 // some of these variables are later updated
-
-if (room == rm_test) {
-    sprite_index = spr_player_sit;
-    image_speed = 0;
-}
-else {
-    sprite_index = spr_player_idle;
-    image_speed = 0;
-}
+sprite_index = spr_player_sit;

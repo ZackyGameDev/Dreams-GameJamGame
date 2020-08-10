@@ -53,10 +53,7 @@ active = 0;
  var str;
  switch (num)
  {
-  case 0: str = "We're no strangers to love
-You know the rules and so do I
-A full commitment's what I'm thinking of
-You wouldn't get this from any other guy";break;
+  case 0: str = "e";break;
   case 1: str = "Never gonna give you up
 Never gonna let you down
 Never gonna run around and desert you
