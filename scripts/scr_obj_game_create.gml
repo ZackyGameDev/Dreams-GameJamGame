@@ -19,10 +19,12 @@ if (os_browser != browser_not_a_browser) {
 }
 
 window_set_size(win_w, win_h)
-window_set_position(win_x, win_y);
 
-if room == rm_start {
-    return noone;
+switch room {
+   case rm_start :
+        window_set_position(win_x, win_y);   
+        return noone; // Again, just an alternative to saying `return void;`
+   break;
 }
 
 ////////////////////////////////////////////////////////////////////////////
