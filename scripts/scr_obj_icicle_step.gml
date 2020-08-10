@@ -1,6 +1,6 @@
 if instance_exists (obj_player) 
 {
-    if (bbox_left < obj_player.x) && (obj_player.x < bbox_right)
+    if (bbox_left < obj_player.x) && (obj_player.x < bbox_right) && (obj_player.y > y)
     {
         self.vsp = 1;
     }   
