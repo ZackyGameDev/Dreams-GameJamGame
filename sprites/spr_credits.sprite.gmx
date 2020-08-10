@@ -6,10 +6,10 @@
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>0</bbox_left>
-  <bbox_right>319</bbox_right>
-  <bbox_top>0</bbox_top>
-  <bbox_bottom>179</bbox_bottom>
+  <bbox_left>2</bbox_left>
+  <bbox_right>318</bbox_right>
+  <bbox_top>59</bbox_top>
+  <bbox_bottom>772</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
@@ -17,7 +17,7 @@
   </TextureGroups>
   <For3D>0</For3D>
   <width>320</width>
-  <height>180</height>
+  <height>860</height>
   <frames>
     <frame index="0">images\spr_credits_0.png</frame>
   </frames>
