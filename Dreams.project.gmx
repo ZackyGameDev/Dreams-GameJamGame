@@ -166,6 +166,7 @@
       <object>objects\obj_spikes</object>
       <object>objects\obj_icicle</object>
       <object>objects\obj_props</object>
+      <object>objects\obj_invisible_spikes</object>
     </objects>
     <objects name="GUI Interactables">
       <object>objects\obj_Bstart</object>
