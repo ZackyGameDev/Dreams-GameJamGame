@@ -36,7 +36,19 @@ self.depth = 100;
 Dlimit = 1;
 PLcCR = 0;
 if (!instance_exists(obj_TextS)){
-        instance_create(0,0,obj_TextS);
+    instance_create(0,0,obj_TextS);
+    switch room 
+    {
+        case rm_D1 :
+             obj_TextS.num = 0;
+        break;
+        case rm_D2 :
+             obj_TextS.num = 1;
+        break;
+        case rm_D3 :
+             obj_TextS.num = 2;
+        break;
+    }
 }
 if (!instance_exists(obj_cam)){
     instance_create(0,0,obj_cam);

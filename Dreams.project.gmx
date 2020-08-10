@@ -202,6 +202,8 @@
     <room>rooms\rm_D1</room>
     <room>rooms\rm_two</room>
     <room>rooms\rm_D2</room>
+    <room>rooms\rm_three</room>
+    <room>rooms\rm_D3</room>
     <room>rooms\rm_test_room</room>
     <room>rooms\rm_test</room>
   </rooms>

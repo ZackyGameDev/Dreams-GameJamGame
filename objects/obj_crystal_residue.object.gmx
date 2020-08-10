@@ -51,6 +51,8 @@ right_x= 50;
           <argument>
             <kind>1</kind>
             <string>obj_game.PLcCR = 2;
+obj_true_fade.fadein = false;
+obj_true_fade.image_alpha = 0;
 </string>
           </argument>
         </arguments>

@@ -75,7 +75,6 @@ active = 0;
  }
  scr_text(str,1, 35, 90);
  obj_text.strL = string_length(str);
- num += 1;
  obj_game.Dlimit = 0;
 }
 
