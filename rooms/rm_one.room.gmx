@@ -3256,7 +3256,7 @@
     <instance objName="obj_floor" x="1096" y="624" name="inst_127ACB38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room" x="1120" y="528" name="inst_9662E6A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room" x="1120" y="576" name="inst_BCE14334" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_room" x="1112" y="760" name="inst_7B379FEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_room" x="1120" y="752" name="inst_7B379FEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="912" y="728" name="inst_19039F5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="912" y="728" name="inst_C186A28D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="904" y="728" name="inst_5D1B0F84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -4932,6 +4932,22 @@
     <instance objName="obj_invisible_spikes" x="760" y="864" name="inst_BECCB009" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_room" x="800" y="760" name="inst_919A5106" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_floor" x="768" y="760" name="inst_3B839AF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn_anchors" x="96" y="152" name="inst_9BD4997E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn_anchors" x="296" y="152" name="inst_B0CC2FA8" locked="0" code="" scaleX="1.5" scaleY="10" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn_anchors" x="336" y="152" name="inst_03414EB0" locked="0" code="" scaleX="1.5" scaleY="9" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn_anchors" x="616" y="232" name="inst_44F032A9" locked="0" code="" scaleX="2" scaleY="13.7142858505249" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn_anchors" x="664" y="232" name="inst_FDF75D70" locked="0" code="" scaleX="2" scaleY="10.2857141494751" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn_anchors" x="920" y="248" name="inst_D03B7E8D" locked="0" code="" scaleX="1.5" scaleY="9" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn_anchors" x="1016" y="280" name="inst_CAAED125" locked="0" code="" scaleX="1.5" scaleY="9" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn_anchors" x="1240" y="344" name="inst_898839A3" locked="0" code="" scaleX="2.25" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn_anchors" x="1304" y="336" name="inst_F9296B89" locked="0" code="" scaleX="1.5" scaleY="7" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn_anchors" x="1296" y="472" name="inst_0B70E931" locked="0" code="" scaleX="1.5" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn_anchors" x="1272" y="472" name="inst_3672DB41" locked="0" code="" scaleX="1.5" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn_anchors" x="1045" y="672" name="inst_56B892CB" locked="0" code="" scaleX="7.375" scaleY="2.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn_anchors" x="1248" y="824" name="inst_24B60B9E" locked="0" code="" scaleX="1.5" scaleY="0" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn_anchors" x="968" y="712" name="inst_E14AFCF1" locked="0" code="" scaleX="1.5" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn_anchors" x="656" y="816" name="inst_75F2B601" locked="0" code="" scaleX="1.5" scaleY="16" colour="4294967295" rotation="0"/>
+    <instance objName="obj_respawn_anchors" x="344" y="840" name="inst_FCE8350A" locked="0" code="" scaleX="1.5" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_true_fade" x="80" y="80" name="inst_7B8BCE9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

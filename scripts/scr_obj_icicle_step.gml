@@ -18,7 +18,10 @@ switch place_meeting (x, y+1, obj_floor) // no point in using switch but i mean,
 
         if self.image_index >= self.image_number - 1
         {
-            instance_destroy();
+            self.y += 3000;
+            vsp = 0;
+            image_speed = 0;
+            image_index = 0;
         }
     break;
 

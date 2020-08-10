@@ -190,6 +190,8 @@
     <object>objects\obj_fadegfhd</object>
     <object>objects\obj_bgtitle</object>
     <object>objects\obj_true_fade</object>
+    <object>objects\obj_death_transition</object>
+    <object>objects\obj_player_death_debri</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
