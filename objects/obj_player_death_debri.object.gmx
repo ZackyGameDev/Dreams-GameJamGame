@@ -28,6 +28,7 @@
             <string>speed = 5;
 direction = point_direction(obj_player.x, obj_player.y, x, y);
 dir_change_speed = 8;
+scale = 2;
 </string>
           </argument>
         </arguments>
@@ -50,7 +51,8 @@ dir_change_speed = 8;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>dir_change_speed -= 0.05;
+            <string>scale -= 0.1
+dir_change_speed -= 0.05;
 direction += dir_change_speed;
 
 var col  = make_color_rgb(random_range(0, 1), random_range(225, 255), random_range(0, 1));
@@ -62,7 +64,7 @@ shader_reset()
 draw_circle_color(
     x, 
     y, 
-    6, 
+    6*scale, 
     col,
     col,
     false
@@ -70,7 +72,7 @@ draw_circle_color(
 
 draw_circle_color(
     x, 
-    y, 
+    y*scale, 
     5.5, 
     col1,
     col1,
@@ -79,12 +81,17 @@ draw_circle_color(
 
 draw_circle_color(
     x, 
-    y, 
+    y*scale, 
     3, 
     col2,
     col2,
     false
 );
+
+if scale &lt;= 0
+{
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>
