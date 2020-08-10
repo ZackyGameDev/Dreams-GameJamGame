@@ -51,7 +51,7 @@ scale = 2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scale -= 0.1
+            <string>scale -= 0.01
 dir_change_speed -= 0.05;
 direction += dir_change_speed;
 
@@ -72,8 +72,8 @@ draw_circle_color(
 
 draw_circle_color(
     x, 
-    y*scale, 
-    5.5, 
+    y, 
+    5.5*scale, 
     col1,
     col1,
     false
@@ -81,8 +81,8 @@ draw_circle_color(
 
 draw_circle_color(
     x, 
-    y*scale, 
-    3, 
+    y, 
+    3*scale, 
     col2,
     col2,
     false
