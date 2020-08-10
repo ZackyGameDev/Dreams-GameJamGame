@@ -50,6 +50,7 @@
     <sprite>sprites\spr_crystal</sprite>
     <sprite>sprites\spr_Button_Burst</sprite>
     <sprite>sprites\spr_shard_get</sprite>
+    <sprite>sprites\spr_respawn_anchors</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Clouds">
@@ -167,6 +168,7 @@
       <object>objects\obj_icicle</object>
       <object>objects\obj_props</object>
       <object>objects\obj_invisible_spikes</object>
+      <object>objects\obj_respawn_anchors</object>
     </objects>
     <objects name="GUI Interactables">
       <object>objects\obj_Bstart</object>
