@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>4194304</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>obj_fade.a = 0;
+obj_fade.fade = 1;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
   <makerSettings>
