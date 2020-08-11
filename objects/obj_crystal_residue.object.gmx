@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>left_x =-50;
 right_x= 50;
-
+audio_play_sound(mus_youwin, 99, false);
 </string>
           </argument>
         </arguments>

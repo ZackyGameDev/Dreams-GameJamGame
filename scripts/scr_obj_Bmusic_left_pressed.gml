@@ -9,4 +9,5 @@ else {
     image_index = 0;
     toggle = 0;
     obj_global.audio_on = true;
+    audio_master_gain(1);
 }
