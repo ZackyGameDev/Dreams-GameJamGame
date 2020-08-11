@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>left_x =-50;
+            <string>audio_stop_all();
+left_x =-50;
 right_x= 50;
 if obj_global.audio_on audio_play_sound(mus_youwin, 99, false);
 </string>
