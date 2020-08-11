@@ -4,7 +4,11 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\mus_youwin</sound>
+    <sound>sound\mus_titlescreen</sound>
+    <sound>sound\mus_level</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Invisible Helpers">
       <sprite>sprites\spr_something</sprite>
