@@ -36,7 +36,19 @@ self.depth = 100;
 Dlimit = 1;
 PLcCR = 0;
 if (!instance_exists(obj_TextS)){
-        instance_create(0,0,obj_TextS);
+    instance_create(0,0,obj_TextS);
+    switch room 
+    {
+        case rm_D1 :
+             obj_TextS.num = 0;
+        break;
+        case rm_D2 :
+             obj_TextS.num = 1;
+        break;
+        case rm_D3 :
+             obj_TextS.num = 2;
+        break;
+    }
 }
 if (!instance_exists(obj_cam)){
     instance_create(0,0,obj_cam);
@@ -75,6 +87,28 @@ switch room {
         bg_scroll_amount[1] = 1/10;
         bg_scroll_amount[2] =  1/6;
         
+    break;
+    
+    case rm_two: 
+        backgrounds[0] = bg_clouds0;
+        backgrounds[1] = bg_clouds1;
+        backgrounds[2] = bg_clouds2;
+        
+        bg_scroll_amount[0] = 1/14;
+        bg_scroll_amount[1] = 1/10;
+        bg_scroll_amount[2] =  1/6;
+        
+    break;
+        
+    case rm_three: 
+        backgrounds[0] = bg_clouds0;
+        backgrounds[1] = bg_clouds1;
+        backgrounds[2] = bg_clouds2;
+        
+        bg_scroll_amount[0] = 1/14;
+        bg_scroll_amount[1] = 1/10;
+        bg_scroll_amount[2] =  1/6;
+                
     break;
     
     default: backgrounds[0] = noone; break; // I later add a check in the draw event that only draws the background if the variable is not `noone`

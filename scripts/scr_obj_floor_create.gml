@@ -6,6 +6,12 @@ switch room {
     case rm_one:
         sprite_index = spr_tileset_stage1_1;
         spr_props = spr_props_stage1_1;
+    case rm_two:
+        sprite_index = spr_tileset_stage1_1;
+        spr_props = spr_props_stage1_1;
+    case rm_three:
+        sprite_index = spr_tileset_stage1_1;
+        spr_props = spr_props_stage1_1;
     break;
 }
 

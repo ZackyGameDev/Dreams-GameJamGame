@@ -58,28 +58,23 @@ active = 0;
   * Who was that?
   * Ever since the incident you can't recall...
       ...the one whose memories you have lost";break;
-  case 1: str = "Never gonna give you up
-Never gonna let you down
-Never gonna run around and desert you
-Never gonna make you cry
-Never gonna say goodbye
-Never gonna tell a lie and hurt you";break;
-  case 2: str = "We've known each other for so long
-Your heart's been aching but you're too shy to say it
-Inside we both know what's been going on
-We know the game and we're gonna play it";break;
-  case 3: str = "And if you ask me how I'm feeling
-Don't tell me you're too blind to see";break;
-  case 4: str = "Never gonna give you up
-Never gonna let you down
-Never gonna run around and desert you
-Never gonna make you cry
-Never gonna say goodbye";break;
+  case 1: str = "
+  * But deep inside your mind
+  * Inside your thoughts and dreams
+  * The memories might be still there...
+  * They have to be there, don't they?";break;
+  case 2: str = "
+  * Finally
+  * You recall everything
+  * You recall, yourself, the incident that caused
+    you to lost your memories, the bad incidents,
+    and also, that 'friend' who had helped you...
+  * Looks like this is the time you can finally
+    break out from your dreams.";break;
   default: str = "Something went wrong!";break;
  }
  scr_text(str,1, 35, 90);
  obj_text.strL = string_length(str);
- num += 1;
  obj_game.Dlimit = 0;
 }
 

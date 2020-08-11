@@ -44,6 +44,7 @@
     </sprites>
     <sprites name="Tilesets">
       <sprite>sprites\spr_tileset_stage1_1</sprite>
+      <sprite>sprites\spr_spikes</sprite>
       <sprites name="Decorations or something idk what you call these">
         <sprite>sprites\spr_props_stage1_1</sprite>
       </sprites>
@@ -55,6 +56,7 @@
     <sprite>sprites\spr_Button_Burst</sprite>
     <sprite>sprites\spr_shard_get</sprite>
     <sprite>sprites\spr_respawn_anchors</sprite>
+    <sprite>sprites\spr_credits</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Clouds">
@@ -198,14 +200,18 @@
     <object>objects\obj_death_transition</object>
     <object>objects\obj_player_death_debri</object>
     <object>objects\obj_slow_black</object>
+    <object>objects\obj_credits</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
     <room>rooms\rm_one</room>
     <room>rooms\rm_D1</room>
     <room>rooms\rm_two</room>
-    <room>rooms\rm_test_room</room>
     <room>rooms\rm_D2</room>
+    <room>rooms\rm_three</room>
+    <room>rooms\rm_D3</room>
+    <room>rooms\rm_end</room>
+    <room>rooms\rm_test_room</room>
     <room>rooms\rm_test</room>
   </rooms>
   <help>
