@@ -51,9 +51,11 @@ if obj_global.audio_on audio_play_sound(mus_youwin, 99, false);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>obj_game.PLcCR = 2;
-obj_true_fade.fadein = false;
-obj_true_fade.image_alpha = 0;
+            <string>if not audio_is_playing(mus_youwin) {
+    obj_game.PLcCR = 2;
+    obj_true_fade.fadein = false;
+    obj_true_fade.image_alpha = 0;
+}
 </string>
           </argument>
         </arguments>
