@@ -35,6 +35,7 @@
     </sprites>
     <sprites name="GUI Interectables">
       <sprite>sprites\spr_Bstart</sprite>
+      <sprite>sprites\spr_sendhelp</sprite>
       <sprite>sprites\spr_Bstart_bg</sprite>
       <sprite>sprites\spr_Bmusic</sprite>
       <sprite>sprites\spr_Bexit</sprite>
@@ -63,6 +64,7 @@
     <sprite>sprites\spr_credits</sprite>
     <sprite>sprites\spr_help</sprite>
     <sprite>sprites\sprite30</sprite>
+    <sprite>sprites\sprite32</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Clouds">
@@ -185,12 +187,14 @@
     </objects>
     <objects name="GUI Interactables">
       <object>objects\obj_Bstart</object>
+      <object>objects\obj_sendhelp</object>
       <object>objects\obj_Bmusic</object>
       <object>objects\obj_PETC</object>
       <object>objects\obj_Bexit</object>
       <object>objects\obj_buttonbg1</object>
       <object>objects\obj_buttonbg2</object>
       <object>objects\obj_buttonbg3</object>
+      <object>objects\obj_buttonbg4</object>
     </objects>
     <objects name="Shader Users">
       <object>objects\obj_sh_shockwave_distort</object>
