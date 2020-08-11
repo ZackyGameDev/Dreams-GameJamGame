@@ -8,6 +8,10 @@
     <sound>sound\mus_youwin</sound>
     <sound>sound\mus_titlescreen</sound>
     <sound>sound\mus_level</sound>
+    <sound>sound\snd_jump</sound>
+    <sound>sound\snd_dash</sound>
+    <sound>sound\snd_dead</sound>
+    <sound>sound\mus_cutscene</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Invisible Helpers">

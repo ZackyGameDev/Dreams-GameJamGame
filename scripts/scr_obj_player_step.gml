@@ -9,6 +9,18 @@ k_dash = (keyboard_check_pressed(vk_lshift) || (k_down && k_jump) || gamepad_but
 floor_below = place_meeting(x, y+1, obj_floor);
 just_jumped = false;
 /////////////////////////////////////////////////////////////////////////////////////////////
+// music
+
+switch sprite_index
+{
+    case spr_player_sit:
+        audio_master_gain(0.1);
+    break;
+    
+    default:
+        audio_master_gain(1);
+    break;
+}
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 // The starting "Dont move if sitting" thing is here
