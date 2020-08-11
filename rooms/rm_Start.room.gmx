@@ -55,6 +55,7 @@
     <instance objName="obj_Bexit" x="113" y="113" name="inst_6156EAE9" locked="0" code="" scaleX="0.266667008399963" scaleY="0.291667014360428" colour="4294967295" rotation="0"/>
     <instance objName="obj_game" x="0" y="0" name="inst_DEB16514" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bgtitle" x="64" y="32" name="inst_F50C681C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_global" x="32" y="0" name="inst_5C9EA0BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_true_fade" x="64" y="96" name="inst_7766824E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

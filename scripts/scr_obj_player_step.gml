@@ -48,6 +48,7 @@ if(!place_meeting(x,y,obj_crystal)){
 // Jump and hyperdash
 if not k_dash and k_jump and floor_below {
 
+    audio_play_sound(snd_jump, 990, false);
     vsp = -jumpsp;
     just_jumped = true; // `just_jumped` is later used in squish squash section (currently removed)
 
@@ -63,6 +64,7 @@ if not k_dash and k_jump and floor_below {
 // The Dash
 } else if k_dash {
     
+    audio_play_sound(snd_dash, 990, false)
     self.img_yscale = 0.70;
     self.img_xscale = 1.20;
     self.in_dash = true;

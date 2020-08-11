@@ -205,6 +205,7 @@
     <object>objects\obj_player_death_debri</object>
     <object>objects\obj_slow_black</object>
     <object>objects\obj_credits</object>
+    <object>objects\obj_global</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
