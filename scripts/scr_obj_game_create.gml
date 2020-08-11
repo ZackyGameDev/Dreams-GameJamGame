@@ -1,48 +1,51 @@
 ////////////////////////////////////////////////////////////////////////////
 // Music
 
-switch room 
+if obj_global.audio_on
 {
-    case rm_start:
-        audio_stop_all();
-        audio_play_sound(mus_titlescreen, 1, true);
-        audio_master_gain(1);
-    break;
-    case rm_one:
-        audio_stop_all();
-        audio_play_sound(mus_level, 9, true);
-        audio_master_gain(1);
-    break;
-    case rm_D1:
-        audio_stop_all();
-        audio_play_sound(mus_cutscene, 9, true);
-        audio_master_gain(0.3);
-    break;
-    case rm_two:
-        audio_stop_all();
-        audio_play_sound(mus_level, 9, true);
-        audio_master_gain(1);
-    break;
-    case rm_D2:
-        audio_stop_all();
-        audio_play_sound(mus_cutscene, 9, true);
-        audio_master_gain(0.3);
-    break;
-    case rm_three:
-        audio_stop_all();
-        audio_play_sound(mus_level, 9, true);
-        audio_master_gain(1);
-    break;
-    case rm_D3:
-        audio_stop_all();
-        audio_play_sound(mus_cutscene, 9, true);
-        audio_master_gain(0.3);
-    break;
-    case rm_end:
-        audio_stop_all();
-        audio_play_sound(mus_cutscene, 9, true);
-        audio_master_gain(0.1);
-    break;
+    switch room 
+    {
+        case rm_start:
+            audio_stop_all();
+            audio_play_sound(mus_titlescreen, 1, true);
+            audio_master_gain(1);
+        break;
+        case rm_one:
+            audio_stop_all();
+            audio_play_sound(mus_level, 9, true);
+            audio_master_gain(1);
+        break;
+        case rm_D1:
+            audio_stop_all();
+            audio_play_sound(mus_cutscene, 9, true);
+            audio_master_gain(0.3);
+        break;
+        case rm_two:
+            audio_stop_all();
+            audio_play_sound(mus_level, 9, true);
+            audio_master_gain(1);
+        break;
+        case rm_D2:
+            audio_stop_all();
+            audio_play_sound(mus_cutscene, 9, true);
+            audio_master_gain(0.3);
+        break;
+        case rm_three:
+            audio_stop_all();
+            audio_play_sound(mus_level, 9, true);
+            audio_master_gain(1);
+        break;
+        case rm_D3:
+            audio_stop_all();
+            audio_play_sound(mus_cutscene, 9, true);
+            audio_master_gain(0.3);
+        break;
+        case rm_end:
+            audio_stop_all();
+            audio_play_sound(mus_cutscene, 9, true);
+            audio_master_gain(0.1);
+        break;
+    }
 }
 
 ////////////////////////////////////////////////////////////////////////////
