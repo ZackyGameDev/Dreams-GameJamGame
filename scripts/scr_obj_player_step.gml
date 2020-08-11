@@ -3,9 +3,9 @@
 k_left = keyboard_check(ord("A"))||keyboard_check(vk_left)|| gamepad_button_check(0, gp_padl);
 k_right = keyboard_check(ord("D"))||keyboard_check(vk_right)|| gamepad_button_check(0, gp_padr);
 k_down = keyboard_check(ord("S"))||keyboard_check(vk_down)|| gamepad_button_check(0, gp_padd);
-k_jump= keyboard_check_pressed(vk_space)|| gamepad_button_check_pressed(0, gp_face1);
+k_jump= keyboard_check_pressed(vk_space)|| gamepad_button_check_pressed(0, gp_face1) || keyboard_check_pressed(ord("X"));
 k_jump_rel=keyboard_check_released(ord("W"))||keyboard_check_released(vk_space)|| gamepad_button_check_released(0, gp_face1);
-k_dash = (keyboard_check_pressed(vk_lshift) || (k_down && k_jump) || gamepad_button_check_pressed(0, gp_shoulderr) || gamepad_button_check_pressed(0, gp_shoulderrb)) && self.in_dash == false
+k_dash = (keyboard_check_pressed(vk_lshift) || (k_down && k_jump) || gamepad_button_check_pressed(0, gp_shoulderr) || gamepad_button_check_pressed(0, gp_shoulderrb) || keyboard_check_pressed(ord("Z"))) && self.in_dash == false
 floor_below = place_meeting(x, y+1, obj_floor);
 just_jumped = false;
 /////////////////////////////////////////////////////////////////////////////////////////////

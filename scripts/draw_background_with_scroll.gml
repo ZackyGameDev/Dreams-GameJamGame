@@ -10,7 +10,7 @@ surface_set_target(srf);
 var i;
 for (i = 0; i < array_length_1d(backgrounds); i++) {
     scrollx[i] += scroll_amount[i];
-    if scrollx[i] >= background_get_width(backgrounds[i])-10 {
+    if scrollx[i] >= background_get_width(backgrounds[i]) {
         scrollx[i] -= background_get_width(backgrounds[i]);
         //show_message("ye boi It happenned")
     }

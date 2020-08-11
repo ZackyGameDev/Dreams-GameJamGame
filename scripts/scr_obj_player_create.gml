@@ -15,5 +15,6 @@ jumped_in_dash = false;
 img_xscale = image_xscale;
 img_yscale = image_yscale;
 anime_dir = 1;
+depth = obj_floor.depth + 1;
 // some of these variables are later updated
 sprite_index = spr_player_sit;

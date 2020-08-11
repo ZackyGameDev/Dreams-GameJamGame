@@ -61,6 +61,8 @@
     <sprite>sprites\spr_shard_get</sprite>
     <sprite>sprites\spr_respawn_anchors</sprite>
     <sprite>sprites\spr_credits</sprite>
+    <sprite>sprites\spr_help</sprite>
+    <sprite>sprites\sprite30</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Clouds">
@@ -199,6 +201,7 @@
       <object>objects\obj_flare_handler</object>
     </objects>
     <object>objects\obj_fadegfhd</object>
+    <object>objects\obj_ok</object>
     <object>objects\obj_bgtitle</object>
     <object>objects\obj_true_fade</object>
     <object>objects\obj_death_transition</object>
@@ -206,6 +209,7 @@
     <object>objects\obj_slow_black</object>
     <object>objects\obj_credits</object>
     <object>objects\obj_global</object>
+    <object>objects\obj_help</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>
@@ -218,6 +222,7 @@
     <room>rooms\rm_end</room>
     <room>rooms\rm_test_room</room>
     <room>rooms\rm_test</room>
+    <room>rooms\rm_help</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
