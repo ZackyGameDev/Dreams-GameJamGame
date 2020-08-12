@@ -21,11 +21,11 @@ The Game is made in GameMaker: Studio 1.2, so you can edit the project in both G
 
 In case you are doing this to create your own levels, like you can see below: 
 
-<img src="https://cdn.discordapp.com/attachments/708599347733856286/742984879033155604/drem.JPG" alt="Dreams-SceenShot-1" width="700"/>
+<img src="https://cdn.discordapp.com/attachments/708599347733856286/742984879033155604/drem.JPG" alt="Dreams-SceenShot-2" width="700"/>
 
 The Levels in the room editor will actually look something like this:
 
-<img src="https://repository-images.githubusercontent.com/280845055/41a8b280-dbc0-11ea-892f-60860a16aac7" alt="Dreams-SceenShot-1" width="700"/>
+<img src="https://cdn.discordapp.com/attachments/708599347733856286/742986523942584441/drem2.JPG" alt="Dreams-SceenShot-3" width="700"/>
 
 So, in case you want to edit these levels here is a quick summary of what objects correspond to what tile in the map:
 * Object named `obj_floor` is the object you can place in the room which is the actuall floor tile, it will automatically autotile to either Grass tile or Dirt tile depending on where it is, in short, its just the tile you wanna use when making cieling, floor, walls, etc.
@@ -42,7 +42,7 @@ So, in case you want to edit these levels here is a quick summary of what object
 
 And with that knowledge you should be able to safely edit the levels!
 
-<img src="https://repository-images.githubusercontent.com/280845055/41a8b280-dbc0-11ea-892f-60860a16aac7" alt="Dreams-SceenShot-1" width="700"/>
+<img src="https://cdn.discordapp.com/attachments/708599347733856286/742986526874402816/drem3.JPG" alt="Dreams-SceenShot-4" width="700"/>
 
 ## Some End Links
 * Zacky2456: https://github.com/Zacky2456
