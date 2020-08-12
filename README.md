@@ -31,7 +31,7 @@ So, in case you want to edit these levels here is a quick summary of what object
 * Object named `obj_floor` is the object you can place in the room which is the actuall floor tile, it will automatically autotile to either Grass tile or Dirt tile depending on where it is, in short, its just the tile you wanna use when making cieling, floor, walls, etc.
 * Object named `obj_spikes` is the object which you can place in the map and it will kill the player instantly on contact.
 * Object named `obj_invisible_spikes` is the object you put below pits, its just like `obj_spikes` but it will be invisible. Don't place these in levels! this is only for placing outside the room!
-* Object named `obj_room` is like the camera, one you are done making your level, place this object above your whole design, and as the player comes in the room, the camera will focus in this very object, see how we have used it in our own designs to give you an instant idea of what it does.
+* Object named `obj_room` is like the camera, once you are done making your level, place this object above your whole design, and as the player comes in the room, the camera will focus in this very object, see how we have used it in our own designs to give you an instant idea of what it does.
 * Object named `obj_cam` controls which `obj_room` to focus
 * Object named `obj_icicle` is an ice spike which you can place on cielings and it will drop on player as the player comes below it.
 * Object named `obj_player` is the actuall player, Don't try to put multiple of these in a single room because I don't know what issues that will cause.
