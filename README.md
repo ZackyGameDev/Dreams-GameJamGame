@@ -21,7 +21,7 @@ The Game is made in GameMaker: Studio 1.2, so you can edit the project in both G
 
 In case you are doing this to create your own levels, like you can see below: 
 
-<img src="https://repository-images.githubusercontent.com/280845055/41a8b280-dbc0-11ea-892f-60860a16aac7" alt="Dreams-SceenShot-1" width="700"/>
+<img src="https://cdn.discordapp.com/attachments/708599347733856286/742984879033155604/drem.JPG" alt="Dreams-SceenShot-1" width="700"/>
 
 The Levels in the room editor will actually look something like this:
 
