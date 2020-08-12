@@ -18,3 +18,13 @@ anime_dir = 1;
 depth = obj_floor.depth + 1;
 // some of these variables are later updated
 sprite_index = spr_player_sit;
+
+// Detecting which controller is plugged in.
+connected_gamepad = 0;
+var i;
+for (i=-1; i<=15; i++) {
+    if gamepad_is_connected(i) {
+        show_debug_message(string(i));
+        connected_gamepad = i;
+    }
+}
