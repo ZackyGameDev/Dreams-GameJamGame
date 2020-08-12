@@ -39,6 +39,8 @@ So, in case you want to edit these levels here is a quick summary of what object
 * Object named `obj_spring` is just a spring which makes the player bounce up in the air
 * Object named `obj_true_fade` is the object which controls the fade in fade out and going to the next room. 
 * Object named `obj_crystal` is the object which marks the end of a room, collecting this object will trigger `obj_true_fade` to make the room eventually fade out and go to the next room. Always place a bunch of `obj_floor`s above the Crystal as cieling! the game **will not progress** if the crystal isn't in contact with any `obj_floor` while trying to go to the next room **after** playing the you win music.
+* Object named `obj_respawn_anchors` is an object which marks the respawn point of the player, if the player dies, he/she will respawn to the respawn anchor that they touched last, **if the player dies and they had not touched any respawn anchors before dieing, the game can crash**. So place this at the start of every challenge.
+* Object named `obj_props` is basically the tree which generates in the levels randomly, these propes are automatically generated, so you don't need to place these in the map yourself.
 
 And with that knowledge you should be able to safely edit the levels!
 
