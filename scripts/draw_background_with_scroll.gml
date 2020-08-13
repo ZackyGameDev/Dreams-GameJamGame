@@ -15,8 +15,9 @@ for (i = 0; i < array_length_1d(backgrounds); i++) {
         //show_message("ye boi It happenned")
     }
     
-    draw_background(backgrounds[i], x + scrollx[i] - background_get_width(backgrounds[i]), 0);
-    draw_background(backgrounds[i], x + scrollx[i]                                       , 0);
+    draw_background(backgrounds[i], scrollx[i] - background_get_width(backgrounds[i]), 0);
+    draw_background(backgrounds[i], scrollx[i]                                       , 0);
+    draw_background(backgrounds[i], scrollx[i] + background_get_width(backgrounds[i]), 0);
 }
 
 surface_reset_target();
