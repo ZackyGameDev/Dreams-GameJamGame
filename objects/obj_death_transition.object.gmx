@@ -77,8 +77,6 @@ if y_offset-view_hview[0]&gt;=0 and can_reset
     obj_player.x = obj_player.spawn_x;
     obj_player.y = obj_player.spawn_y;
     obj_player.image_alpha = 1;
-    obj_cam.x = obj_cam.xstart;
-    obj_cam.y = obj_cam.ystart;
     
     if instance_exists(obj_icicle)
     {

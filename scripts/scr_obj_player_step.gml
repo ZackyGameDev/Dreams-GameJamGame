@@ -22,9 +22,26 @@ if obj_global.audio_on
             audio_master_gain(1);
         break;
     }
-}    
+}
+
 /////////////////////////////////////////////////////////////////////////////////////////////
-// The starting "Dont move if sitting" thing is here
+// Yeet the player out of the world if he has just died
+
+if image_alpha == 0 
+{
+    self.x = -999;
+    self.y = 9999;
+}
+    
+/////////////////////////////////////////////////////////////////////////////////////////////
+// Dont move if transitioning between different rooms is here
+
+if not (obj_cam.current_rm_obj_x -1 < obj_cam.x and obj_cam.current_rm_obj_x +1 > obj_cam.x) {
+   image_speed = 0;
+   return noone; // again alternate to saying `return void;`
+}
+
+// The starting "Dont move if sitting" thing is also right here
 
 if sprite_index = spr_player_sit 
 {
