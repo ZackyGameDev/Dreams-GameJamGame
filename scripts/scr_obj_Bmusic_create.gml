@@ -8,3 +8,4 @@ speed = 0.01;
 direction += 3;
 toggle = 0
 image_speed = 0;
+
