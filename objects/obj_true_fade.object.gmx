@@ -57,7 +57,12 @@ if fadein {
     image_alpha -= 0.01;
 } else {
     image_alpha += 0.05;
-    if image_alpha &gt;= 1 room_goto_next();
+    if image_alpha &gt;= 1 {
+       switch room {
+           case rm_end: game_restart(); break;
+           default: room_goto_next();break;
+       }
+    }
 }
 </string>
           </argument>

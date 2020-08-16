@@ -67,7 +67,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*// Debug commands
+            <string>/// Debug commands
+/*
 if keyboard_check_pressed(ord("R")) scr_kill_player();
 if keyboard_check_pressed(vk_escape) game_end();
 if keyboard_check_pressed(ord("F")) {

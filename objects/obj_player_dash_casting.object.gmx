@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>depth = obj_player.depth -1;
+if obj_player.image_alpha == 0
+{
+    image_alpha =0;
+}  
 </string>
           </argument>
         </arguments>

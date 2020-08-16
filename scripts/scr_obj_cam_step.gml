@@ -4,3 +4,5 @@ view_yview = y - view_hview / 2;
 
 x += (current_rm_obj_x - x) / 10;
 y += (current_rm_obj_y - y) / 10;
+
+
