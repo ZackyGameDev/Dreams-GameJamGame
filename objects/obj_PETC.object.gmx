@@ -73,6 +73,8 @@
             <kind>1</kind>
             <string>obj_fade.a = 0;
 obj_fade.fade = 1;
+obj_true_fade.fadein = false;
+obj_true_fade.image_alpha = 0;
 obj_game.PLcCR = 2;
 
 instance_destroy();

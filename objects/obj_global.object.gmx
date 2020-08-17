@@ -73,6 +73,9 @@
           <argument>
             <kind>1</kind>
             <string>if not audio_on audio_master_gain(0);
+if instance_exists(obj_Bmusic) {
+    if audio_on obj_Bmusic.image_index = 0; else obj_Bmusic.image_index = 1;
+}
 </string>
           </argument>
         </arguments>

@@ -195,7 +195,6 @@
       <object>objects\obj_buttonbg2</object>
       <object>objects\obj_buttonbg3</object>
       <object>objects\obj_buttonbg4</object>
-      <object>objects\obj_true_fade</object>
     </objects>
     <objects name="Shader Users">
       <object>objects\obj_sh_shockwave_distort</object>
@@ -206,6 +205,7 @@
       <object>objects\obj_flare_handler</object>
     </objects>
     <object>objects\obj_fadegfhd</object>
+    <object>objects\obj_true_fade</object>
     <object>objects\obj_ok</object>
     <object>objects\obj_bgtitle</object>
     <object>objects\obj_death_transition</object>

@@ -53,8 +53,10 @@ if obj_global.audio_on audio_play_sound(mus_youwin, 99, false);
             <kind>1</kind>
             <string>if not audio_is_playing(mus_youwin) {
     obj_game.PLcCR = 2;
-    obj_true_fade.fadein = false;
-    obj_true_fade.image_alpha = 0;
+    if obj_true_fade.fadein == true {
+        obj_true_fade.fadein = false;
+        obj_true_fade.image_alpha = 0;
+    }
     if room = rm_three room_goto_next();
 }
 </string>
