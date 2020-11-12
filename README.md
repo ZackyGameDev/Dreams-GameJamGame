@@ -1,7 +1,7 @@
 # Dreams GameJamGame
 <img src="https://repository-images.githubusercontent.com/280845055/41a8b280-dbc0-11ea-892f-60860a16aac7" alt="Dreams-SceenShot-1" width="500"/>
 
-[Dreams](https://zacky2456.itch.io/dreams) is a game I ([@Zacky2456](https://github.com/Zacky2456)) and [@Dking08](https://github.com/Dking08) worked on as a submission to the [I Can't Write But I want to tell a story Game Jam](https://itch.io/jam/i-cant-write-but-want-to-tell-a-story/)
+[Dreams](https://zackygamedev.itch.io/dreams) is a game I ([@Zacky2456](https://github.com/Zacky2456)) and [@Dking08](https://github.com/Dking08) worked on as a submission to the [I Can't Write But I want to tell a story Game Jam](https://itch.io/jam/i-cant-write-but-want-to-tell-a-story/)
 The Game is basically a Platformer Game, in which you look for Memories in your protagonist's **Dreams**
 
 This repository contains the source code for the whole game.
