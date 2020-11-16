@@ -105,9 +105,9 @@ if (!instance_exists(obj_TextS)){
 if (!instance_exists(obj_cam)){
     instance_create(0,0,obj_cam);
 }
-if (!instance_exists(obj_fade)) and not room == rm_start{
-    obj_fade.check = 0;
+if (!instance_exists(obj_fade)) and not room == rm_start {
     instance_create(0,0,obj_fade);
+    obj_fade.check = 0;
 }
 /*
 ////////////////////////////////////////////////////////////////////////////
